@@ -16,10 +16,6 @@
     <title>Teatro Viajero El Fénix</title>
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="Fotos/Iconos/TEATRO_ICO.ico" />
-    <!-- PARA QUE LA BARRA DE NAV ESTÉ FIJA
-    <link href="css/navbar-fixed.css" rel="stylesheet"> -->
-    <!-- Agrega esto en el <head> para los íconos de redes sociales -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/bootstrap.css" rel="stylesheet" />
     <style>
@@ -203,7 +199,8 @@
         </section>
     </main>
     <main class="container" style="text-align: center;">
-        <img src="Fotos/Logos/TEATRO.webp" alt="Logo Teatro Viajero El Fénix" style="max-width: 30%; height: auto;">
+        <img src="Fotos/Logos/TEATRO.webp" alt="Logo Teatro Viajero El Fénix"
+            style="max-width: 30%; height: auto;"><br><br>
 
         <!-- INICIA CARRUSEL DE IMÁGENES -->
         <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
@@ -221,9 +218,10 @@
         </div><br>
         <!-- TERMINA CARRUSEL DE IMÁGENES -->
         <!-- PIE ESPECIAL -->
-        <h3 style="color: #B22222; font-weight: bold;">OBRAS Y COSTOS</h3>
+        <h3 style="color: white; font-weight: bold; background-color: blue; padding: 2px;">OBRAS Y COSTOS <br> (clic en
+            los títulos)</h3>
         <h4 style="background-color: yellow; color: black; font-weight: bold; padding: 5px;">
-            Los precios incluyen impuestos y son deducible como publicidad
+            Los precios incluyen impuestos y son deducibles como publicidad
         </h4>
         <!-- Espacio para la imagen -->
         <div class="modal fade" id="obraModal" tabindex="-1" aria-labelledby="obraModalLabel">
@@ -277,7 +275,7 @@
                 <div class="col-md-3 text-center flex-grow-1">
                     <img src="Fotos/Logos/TEATRO.webp" alt="Logo Teatro Viajero El Fénix" style="max-width: 60px;">
                     <h5 class="mt-2 fw-bold">Teatro Viajero El Fénix</h5>
-                    <p>La magia del teatro, en todo el país.</p><br><br>
+                    <p>La magia del teatro, en todo el país.</p><br>
                 </div>
 
                 <!-- Enlaces rápidos -->
@@ -292,26 +290,31 @@
                         <!-- <li><a href="#" class="text-light text-decoration-none">Actores</a></li> -->
                     </ul><br>
                 </div>
-
-                <!-- Redes Sociales -->
                 <div class="col-md-3 text-center flex-grow-1">
                     <h5 class="fw-bold" style="color: green;">Síguenos</h5>
-                    <a href="https://www.facebook.com/profile.php?id=61574731620142" class="text-light mx-2"
-                        title="Facebook"><i class="fab fa-facebook fa-lg"></i></a>
-                    <a href="https://www.instagram.com/teatroviajeroelfenix/" class="text-light mx-2"
-                        title="Instagram"><i class="fab fa-instagram fa-lg"></i></a>
-                    <a href="https://www.youtube.com/channel/UCX6KHpYwSBF8Lu-NGydPlgQ" class="text-light mx-2"
-                        title="YouTube"><i class="fab fa-youtube fa-lg"></i></a>
-                    <a href="https://x.com/TeatViajElFenix" class="text-light mx-2" title="X">
-                        <i class="fab fa-x fa-lg"></i>
-                    </a><br><br><br>
+                    <span><a href="https://www.youtube.com/channel/UCX6KHpYwSBF8Lu-NGydPlgQ" target="_blank"
+                            rel="noopener" class="text-light text-decoration-none">
+                            <img src="Fotos/Iconos/youtube.png" alt="YouTube" style="width:26px; height:20px;">
+                        </a></span>&nbsp;&nbsp;
+                    <span><a href="https://www.facebook.com/profile.php?id=61574731620142" target="_blank"
+                            rel="noopener" class="text-light text-decoration-none">
+                            <img src="Fotos/Iconos/facebook.png" alt="Facebook" style="width:21px; height:21px;">
+                        </a></span>&nbsp;&nbsp;
+                    <span><a href="https://x.com/TeatViajElFenix" target="_blank" rel="noopener"
+                            class="text-light text-decoration-none">
+                            <img src="Fotos/Iconos/x.webp" alt="X" style="width:20px; height:20px;">
+                        </a></span>&nbsp;&nbsp;
+                    <span><a href="https://www.instagram.com/teatroviajeroelfenix/" target="_blank" rel="noopener"
+                            class="text-light text-decoration-none">
+                            <img src="Fotos/Iconos/instagram.png" alt="Instagram" style="width:22px; height:22px;">
+                        </a></span>&nbsp;&nbsp;<br><br><br>
                 </div>
 
                 <!-- Logo Matriz Industrias Contreras -->
                 <div class="col-md-3 text-center flex-grow-1">
                     <h5 class="fw-bold" style="color: green;">Contrataciones</h5>
                     <p class="m-0 text-white">Correo: <br>teatroviajeroelfenix@gmail.com</p>
-                    <p class="m-0 text-white">Teléfonos: <br> 55 6395 6800</p><br>
+                    <p class="m-0 text-white">Teléfono: <br> 55 6395 6800</p><br>
                 </div>
                 <!-- Derechos de autor -->
                 <p class="mb-0 mt-3">&copy; 2025 Teatro Viajero El Fénix. <br> Todos los derechos reservados.</p>
@@ -380,7 +383,7 @@
 
             for (let i = 1; i <= 42; i++) {
                 images += `
-                <div class="carousel-item ${i === 1 ? 'active' : ''}" data-bs-interval="1500">
+                <div class="carousel-item ${i === 1 ? 'active' : ''}" data-bs-interval="2000">
                     <img src="Fotos/FTeatro/${i}.webp" class="d-block w-100" alt="Imagen ${i}">
                 </div>
             `;
