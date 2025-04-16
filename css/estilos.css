@@ -417,7 +417,7 @@ body {
 .card.hostinger-ad {
   background-color: #673de6; /* Morado Hostinger */
   width: 280px;
-  height: 40px; /* nivel de alto de la tarjeta */
+  height: 60px; /* nivel de alto de la tarjeta */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -447,7 +447,7 @@ body {
 .card.ml-ad {
   background-color: #ffe600; /* Color corporativo de Mercado Libre */
   width: 280px;
-  height: 40px; /* nivel de alto de la tarjeta */
+  height: 60px; /* nivel de alto de la tarjeta */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -462,7 +462,7 @@ body {
 }
 
 .card.ml-ad a {
-  color: #333; /* Color oscuro para contraste con amarillo */
+  color: #000; /* Color oscuro para contraste con amarillo */
   font-size: 14px;
   text-decoration: none;
   font-weight: bold;
@@ -507,7 +507,7 @@ footer {
   color: #bdc3c7;
   text-decoration: none;
   display: block;
-  margin-bottom: 5px;
+  margin-bottom: 14px;
   font-size: 14px;
   transition: color 0.3s;
 }
