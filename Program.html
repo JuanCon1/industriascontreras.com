@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="es" data-bs-theme="auto">
+<html lang="es">
 
 <head>
     <!-- Meta etiquetas -->
@@ -97,11 +97,27 @@
 
         .bd-mode-toggle .dropdown-menu .active .bi {
             display: block !important;
-        }.container {
-    margin-left: auto;
-    margin-right: auto;
-}
+        }
 
+        .container {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta {
+            background: #F39C12;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            font-size: 1.2rem;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .cta:hover {
+            background: #800000;
+        }
     </style>
 </head>
 
@@ -110,33 +126,31 @@
         <header>
             <!-- Sección con fondo completo -->
             <div style="background-color: #6EC9CA; width: 100%;">
-                <div class="container d-flex flex-column flex-md-row align-items-center py-1 border-bottom">
-                    <!-- Logo y título -->
-                    <span class="d-flex align-items-center">
-                        <img src="Fotos/Logos/PROGRAM.webp" alt="Logo Program" width="40" height="32" class="me-2" />
-                        <span class="fs-4" style="color: #8E44AD; font-weight: bold;">PROGRAM</span>
+                <div class="container py-3 px-0 d-flex flex-column align-items-center text-center">
+
+                    <!-- Logo y título centrados -->
+                    <span class="d-flex align-items-center justify-content-center mb-3">
+                        <img src="Fotos/Logos/PROGRAM.webp" alt="Logo Program"
+                            style="height: auto; max-height: 80px; width: auto; max-width: 100%; margin-right: 15px;" />
+                        <h1 class="m-0 display-5 fw-bold" style="font-family: Arial, sans-serif; color: #8E44AD;">
+                            PROGRAM
+                        </h1>
                     </span>
 
-                    <!-- Menú de navegación -->
-                    <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
-                        <a class="me-3 py-2 text-white text-decoration-none" href="#">Página web</a>
-                        <a class="me-3 py-2 text-white text-decoration-none" href="#">$</a>
-                        <a class="me-3 py-2 text-white text-decoration-none" href="#">Tienda web</a>
-                        <a class="py-2 text-white text-decoration-none" href="#">$</a>
+                    <!-- Menú de navegación optimizado -->
+                    <nav class="d-flex flex-row justify-content-center flex-nowrap overflow-auto">
+                        <a class="mx-2 my-2 text-decoration-underline fw-bold" style="color: #003399;"
+                            href="#Pagina_web">Página web</a>
+                        <a class="mx-2 my-2 text-decoration-underline fw-bold" style="color: #003399;"
+                            href="#Tienda_web">Tienda web</a>
+                        <a class="mx-2 my-2 text-decoration-underline fw-bold" style="color: #003399;"
+                            href="#Contacto">Contacto</a>
                     </nav>
                 </div>
-            </div>
+            </div><br>
 
             <div class="pricing-header mx-auto text-center"
                 style="padding-top: 0px; padding-bottom: 0px; margin-top: 0;">
-                <!-- Logo y título -->
-                <span class="d-inline-flex align-items-center justify-content-center text-decoration-none">
-                    <img src="Fotos/Logos/PROGRAM.webp" alt="Logo Program"
-                        style="height: auto; max-height: 80px; width: auto; max-width: 100%; margin-right: 15px;" />
-                    <h1 class="m-0 display-4 fw-normal" style="font-family: Arial, sans-serif; color: #8E44AD;">
-                        <strong>PROGRAM</strong>
-                    </h1>
-                </span>
 
                 <p class="fs-8 text-body-secondary">
                     <strong>Diseñamos tu página web o tienda en línea de forma profesional, y totalmente
@@ -150,7 +164,7 @@
             </div>
         </header>
 
-        <main>
+        <main id="Pagina_web">
             <div class="row row-cols-1 row-cols-md-3 mb-3 text-center justify-content-center">
                 <div class="col d-flex justify-content-center">
                     <div class="card mb-4 rounded-3 shadow-sm">
@@ -159,7 +173,7 @@
                             <span class="fs-4" style="color: #8E44AD; font-weight: bold;">PÁGINA WEB</span>
                         </div>
                         <!-- Imagen en la parte superior -->
-                        <img src="Fotos/Program/Pag_web.jpg" class="card-img-top" alt="Logo Program">
+                        <img src="Fotos/Program/Pag_web.webp" class="card-img-top" alt="Logo Página web">
 
                         <div class="card-body">
                             <h1 class="card-title pricing-card-title">$11 000
@@ -174,21 +188,30 @@
                                     proveedor del hosting</li>
                                 <li><span style="color: red;">**</span> Terminando el 1er año, el cliente renovará sin
                                     intermediarios con
-                                    el proveedor del dominio.</li>
+                                    el proveedor del dominio. <br><br>
+                                </li>
+                                <li>
+                                    <a href="https://casualidades.net" target="_blank" rel="noopener"
+                                        style="font-weight: bold; font-size: 1.15rem;">
+                                        Ve un ejemplo de Página web
+                                    </a>
+                                </li>
+                                <li> Donde puedes ver varias funcionalidades que ofrecemos, como carrusel de imágenes,
+                                    enlaces a otras páginas del mismo dominio, enlaces fuera del mismo, podemos
+                                    agregarte también un formulario de contacto y más.
+                                </li>
                             </ul>
-                            <button type="button" class="w-100 btn btn-lg btn-outline-primary">Consigue este
-                                paquete</button>
                         </div>
                     </div>
                 </div>
                 <div class="col">
                     <div class="card mb-4 rounded-3 shadow-sm">
 
-                        <div class="card-header py-3">
+                        <div class="card-header py-3" id="Tienda_web">
                             <span class="fs-4" style="color: #8E44AD; font-weight: bold;">TIENDA WEB</span>
                         </div>
                         <!-- Imagen en la parte superior -->
-                        <img src="Fotos/Program/tienda_web.jpg" class="card-img-top" alt="Logo tienda_web">
+                        <img src="Fotos/Program/tienda_web.webp" class="card-img-top" alt="Logo Tienda web">
 
                         <div class="card-body">
                             <h1 class="card-title pricing-card-title">$20 000
@@ -205,56 +228,52 @@
                                     intermediarios con
                                     el proveedor del dominio.</li>
                                 <li><span style="color: red;">***</span> Por un bajo costo extra, se pueden
-                                    agregar más productos para vender.</li>
+                                    agregar más productos para vender.<br><br></li>
+
+                                <li>
+                                    <a href="https://softwic.com" target="_blank" rel="noopener"
+                                        style="font-weight: bold; font-size: 1.15rem;">
+                                        Ve un ejemplo de Tienda web
+                                    </a>
+                                </li>
+                                <li> Al estar totalmente automatizada, te llegará un mensaje de correo a tu celular
+                                    indicando
+                                    que has vendido, y solo te restaría entregar el producto.
+                                </li>
                             </ul>
-                            <button type="button" class="w-100 btn btn-lg btn-outline-primary">Consigue este
-                                paquete</button>
                         </div>
                     </div>
+
+                </div>
+            </div>
+            <div style="margin: 2rem 0; margin-top: 20px;">
+                <div class="cta"
+                    onclick="alert('Escríbenos por WhatsApp o márcanos al 55-2148-5031\n\no escríbenos al correo info@softwic.com')">
+                    <strong>¡Contáctanos!</strong>
                 </div>
             </div>
         </main>
-
-        <footer class="pt-4 my-md-5  border-top">
-            <div class="row">
-                <div class="col-6 col-md">
-                    <h5>Características</h5>
-                    <ul class="list-unstyled text-small">
-                        <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Cosas interesantes</a>
-                        </li>
-                        <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Característica
-                                aleatoria</a></li>
-                        <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Función de equipo</a>
-                        </li>
-                        <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Cosas para
-                                desarrolladores</a></li>
-                        <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Otro</a></li>
-                        <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Último tiempo</a></li>
-                    </ul>
-                </div>
-                <div class="col-6 col-md">
-                    <h5>Recursos</h5>
-                    <ul class="list-unstyled text-small">
-                        <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Recurso</a></li>
-                        <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Nombre del recurso</a>
-                        </li>
-                        <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Otro recurso</a>
-                        </li>
-                        <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Recurso final</a></li>
-                    </ul>
-                </div>
-                <div class="col-6 col-md">
-                    <h5>Acerca de </h5>
-                    <ul class="list-unstyled text-small">
-                        <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Equipo</a></li>
-                        <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Ubicaciones</a></li>
-                        <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Privacidad</a></li>
-                        <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Términos</a></li>
-                    </ul>
-                </div>
-            </div>
-        </footer>
     </div>
+    <footer style="background-color: #8E44AD; color: white; text-align: center; padding: 2rem 1rem;" id="Contacto">
+        <div class="container">
+            <p class="mb-2" style="font-size: 1.1rem;">&copy; 2025 <strong>Program</strong><br>Todos los derechos
+                reservados.</p>
+
+            <p class="mb-3">
+                · WhatsApp: <span style="color: white; text-decoration: none;">55-2148-5031</span><br>
+                · Correo: <span style="color: white; text-decoration: none;">info@softwic.com</span>
+            </p>
+
+            <!-- Logo y enlace a la matriz -->
+            <a href="https://industriascontreras.com" rel="noopener" style=" text-decoration: underline; color: white;">
+                <img src="Fotos/Logos/LOGO_MATRIZ.webp" alt="Industrias Contreras"
+                    style="width: 30px; height: 40px; margin-bottom: 0.5rem;">
+                <p style="margin: 0;">Visita la matriz<br><strong>Industrias Contreras</strong></p>
+            </a>
+        </div>
+    </footer>
+
+
 
 </body>
 
