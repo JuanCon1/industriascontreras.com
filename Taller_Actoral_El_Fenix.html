@@ -2,192 +2,104 @@
 <html lang="es">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="Juan Contreras actor">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Juan Contreras actor" />
     <meta name="keywords"
-        content="Teatro, Taller Actoral El Fénix, Industrias Contreras, espectáculos, familia, arte, cultura, creatividad, diversión, presentación, obras, eventos, Funciones, Puestas en escena">
-    <meta name="generator" content="">
+        content="Teatro, Taller Actoral El Fénix, Industrias Contreras, espectáculos, familia, arte, cultura, creatividad, diversión, presentación, obras, eventos, Funciones, Puestas en escena" />
+    <meta name="generator" content="" />
     <!-- Descripción para motores de búsqueda -->
     <meta name="description" content="Taller Actoral El Fénix es una filial de Industrias Contreras
     que ofrece talleres de actuación. ¡únete, aprende y diviértete!" />
     <title>Taller Actoral El Fénix</title>
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="Fotos/Iconos/TALLER_ICO.ico" />
-    <style>
-        body {
-            font-family: 'Segoe UI', sans-serif;
-            margin: 0;
-            padding: 0;
-            background: #fff8f0;
-            color: #333;
-        }
-
-        header {
-            background: #F39C12;
-            color: white;
-            text-align: center;
-            padding: 1rem 1rem;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 2.5rem;
-        }
-
-        header p {
-            font-size: 1.2rem;
-        }
-
-        section {
-            max-width: 900px;
-            margin: 1rem auto;
-            padding: 0 1rem;
-        }
-
-        .highlight {
-            background: #ffe0cc;
-            padding: 1rem;
-            border-left: 5px solid #a30000;
-            margin-bottom: 2rem;
-        }
-
-        .info {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1rem;
-        }
-
-        .info div {
-            flex: 1;
-            background: #CFF4FC;
-            padding: 1rem;
-            border-radius: 8px;
-        }
-
-        .cta {
-            background: #F39C12;
-            color: white;
-            text-align: center;
-            padding: 1rem;
-            font-size: 1.2rem;
-            border-radius: 8px;
-            cursor: pointer;
-            transition: background 0.3s ease;
-        }
-
-        .cta:hover {
-            background: #800000;
-        }
-
-        footer {
-            text-align: center;
-            padding: 2rem 1rem;
-            background: #333;
-            color: white;
-        }
-
-        @media (max-width: 600px) {
-            header h1 {
-                font-size: 2rem;
-            }
-
-            .info {
-                flex-direction: column;
-            }
-        }
-
-        .logo {
-            max-width: 200px;
-            height: auto;
-            display: block;
-            margin: 0 auto 1rem;
-        }
-
-        @media (max-width: 600px) {
-            .logo {
-                max-width: 90vw;
-                /* se adapta casi al ancho de la pantalla */
-            }
-        }
-
-        .info h3 {
-            font-size: 1.2rem;
-            color: #b30000;
-            margin: 0 0 0.3rem;
-            /* Quitamos margen superior, dejamos pequeño margen inferior */
-        }
-
-        .info p {
-            margin-top: 0;
-            /* Elimina espacio extra encima del <p> */
-            margin-bottom: 1rem;
-            /* Mantiene separación con lo siguiente */
-        }
-
-        .highlight h2 {
-            color: #a30000;
-            margin: 0 0 1rem;
-            /* Espacio entre el título y el párrafo */
-        }
-
-        .highlight ul {
-            list-style-type: disc;
-            padding-left: 20px;
-            /* Espacio a la izquierda para la lista */
-        }
-    </style>
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="css/taller.css" />
 </head>
 
 <body>
+    <nav class="navbar">
+        <button class="menu-toggle" onclick="toggleMenu()" id="menuBtn">☰</button>
+        <ul class="nav-items" id="navMenu">
+            <li><a href="Archivos/Taller/Privacidad.html">• Aviso de privacidad</a></li>
+            <li><a href="Archivos/Taller/Quienes_somos.html">• Quiénes somos</a></li>
+            <!-- <li><a href="Archivos/Taller/Terminos.html">• Términos</a></li>
+            <li><a href="Archivos/Taller/Acuerdos.html">• Acuerdos</a></li>            
+            <li><a href="Archivos/Taller/Requisitos.html">• Requisitos</a></li> -->
+        </ul>
+    </nav>
 
     <header>
-        <img src="Fotos/Logos/TALLERok.webp" alt="Logo Taller Actoral El Fénix" class="logo">
-        <h1>CURSO DE VERANO</h1><br>
-        <strong style="color: black;">Niñas y niños desde los 10 años, jóvenes y adultos de todas las edades. <br><br>No
-            necesitas
-            experiencia
-            previa... <br>¡solo las ganas de aprender actuación!</strong>
+        <img src="Fotos/Logos/TALLERok.webp" alt="Logo Taller Actoral El Fénix" class="logo" />
+        <h1>CURSO DE VERANO</h1>
+        <br />
+        <strong style="color: black">Niñas y niños desde los 10 años, jóvenes y adultos de todas las edades.
+            <br /><br />No necesitas experiencia previa... <br />¡solo las ganas de
+            aprender actuación!</strong>
     </header>
 
-    <section style="display: flex; flex-direction: column; align-items: center; text-align: center; padding: 0 5px;">
-
-        <div class="highlight" style="padding: 0 5px;">
-            <h2 style="font-size: 1.1rem;"><strong>¿POR QUÉ TOMAR ESTAS CLASES?</strong></h2>
-            <p><strong>Porque las técnicas de actuación <br> te ayudarán a transformar tu vida al:</strong></p>
-            <ul style="color: #228B22; font-weight: bold;">
+    <section style="
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 0 5px;
+        ">
+        <div class="highlight" style="padding: 0 5px">
+            <h2 style="font-size: 1.1rem">
+                <strong>¿POR QUÉ TOMAR ESTAS CLASES?</strong>
+            </h2>
+            <p>
+                <strong>Porque las técnicas de actuación <br />
+                    te ayudarán a transformar tu vida al:</strong>
+            </p>
+            <ul style="color: #228b22; font-weight: bold">
                 <li>Crear una imagen de respeto y liderazgo.</li>
                 <li>Hablar con certeza y seguridad.</li>
                 <li>Trabajar con armonía en equipo.</li>
                 <li>Desarrollar tu creatividad y visión.</li>
                 <li>Potencializar tus habilidades innatas.</li>
             </ul>
-            <h2 style="font-size: 1.1rem;"><strong>ADEMÁS...</strong></h2>
-            <ul style="color: #228B22; font-weight: bold;">
+            <h2 style="font-size: 1.1rem"><strong>ADEMÁS...</strong></h2>
+            <ul style="color: #228b22; font-weight: bold">
                 <li>Al final del taller, montaremos una obra.</li>
-                <li style="color: #a30000;">El 100 % de la taquilla será para los actores.</li>
-                <li style="color: black; font-size: 1.15em;">Recibirás tu constancia de participación.</li>
+                <li style="color: #a30000">
+                    El 100 % de la taquilla será para los actores.
+                </li>
+                <li style="color: black; font-size: 1.15em">
+                    Recibirás tu constancia de participación.
+                </li>
             </ul>
         </div>
 
-        <div class="info" style="margin-top: -20px; padding-left: 0px; padding-right: 0px;">
-
+        <div class="info" style="margin-top: -20px; padding-left: 0px; padding-right: 0px">
             <!-- Presentación y grupos -->
             <div>
-                <h3>Impartido por el maestro <br> Juan Contreras</h3>
+                <h3>
+                    Impartido por el maestro <br />
+                    Juan Contreras
+                </h3>
                 <p>
                     Con un
-                    <a href="Filial/Taller/Curriculum_Juan_Contreras.pdf" target="_blank" rel="noopener">
+                    <a href="Archivos/Taller/Curriculum_Juan_Contreras.pdf" target="_blank" rel="noopener">
                         currículum</a>
                     de más de 41 años de experiencia en
                     <a href="https://www.youtube.com/watch?v=HARL47JPZTI&list=PLFicO9BkRlSoWoIUcCLtTpCnTL1qyzDa9&pp=gAQB"
                         target="_blank" rel="noopener">
-                        actuación</a> y 12 de
+                        actuación</a>
+                    y 12 de
                     <a href="https://youtu.be/VwEPlOS__-A?si=thkhG1eaJNb_VLwE" target="_blank" rel="noopener">
-                        dirección.</a> Creador de la técnica actoral: <br>"Visión, movimiento y futuro".
+                        dirección.</a>
+                    Creador de la técnica actoral: <br />"Visión, movimiento y futuro".
                 </p>
-                <!--  <h3>Grupos reducidos</h3>
-                <p>Solo 10 personas por grupo.</p>-->
+                <!--  -->
+                <h3>Grupos reducidos</h3>
+                <p>Solo 15 personas por grupo.</p>
+                <h3>¡Primer clase gratis!</h3>
+                <p><strong>Transforma tu forma de pensar, sentir y actuar. Aprender es el primer paso para lograr todo
+                        lo que
+                        sueñas.</strong></p>
             </div>
 
             <!-- Cuándo y horario -->
@@ -196,44 +108,197 @@
                 <p>Inicia el <strong>lunes 21 de julio de 2025.</strong></p>
                 <p>Finaliza el <strong>sábado 23 de agosto de 2025.</strong></p>
                 <h3>Duración</h3>
-                <p>En este caso son 5 semanas según el <a href="Fotos/Taller/Calendario_2025.jpg" target="_blank"
-                        rel="noopener">calendario</a>. (Sesiones de 3 horas c/u.)</p>
+                <p>
+                    ¡48 horas de aprendizaje! <br>En este caso son 5 semanas según el
+                    <a href="Fotos/FTaller/Calendario_2025.jpg" target="_blank" rel="noopener">calendario</a>. (Sesiones
+                    de 3 horas c/u.)
+                </p>
                 <h3>Horario</h3>
-                <p>Lunes, miércoles y viernes.<br>De 10:00 a.m. a 1:00 p.m.</p>
+                <p>Lunes, miércoles y viernes. <br>+ 1 sábado<br />De 10:00 a.m. a 1:00 p.m.</p>
             </div>
 
             <!-- Dónde y duración -->
             <div>
                 <h3>¿Dónde?</h3>
-                <p> <a href="https://maps.app.goo.gl/woE35YSt9XkhSDBPA" target="_blank" rel="noopener">"Parque Lázaro
-                        Cárdenas" <br><br>Eje Central, Esq. Diagonal 20 de Noviembre.</a></p>
+                <p>
+                    <a href="https://maps.app.goo.gl/woE35YSt9XkhSDBPA" target="_blank" rel="noopener">"Parque Lázaro
+                        Cárdenas" <br /><br />Eje Central, Esq. Diagonal
+                        20 de Noviembre.</a>
+                </p>
                 <h3>Modalidad</h3>
-                <p>Presencial, en un ambiente seguro y propicio para la creatividad.</p>
+                <p>
+                    Presencial, en un ambiente seguro y propicio para la creatividad.
+                </p>
                 <h3>Precio</h3>
-                <p><strong>$50</strong> por clase. (15 clases = $750)<br><br>Al pagar en una sola emisión todo el taller
-                    únicamente <strong>$650.</strong></p>
+                <p>
+                    <strong>$50</strong> por clase. (16 clases = $800)<br /><br />Menos la clase gratis=
+                    <strong>$750</strong><br /><br />Al
+                    pagar en una sola emisión todo el taller, únicamente
+                    <strong>$650.</strong>
+                </p>
             </div>
         </div>
-
-        <div style="margin: 2rem 0; margin-top: 20px;">
+        <!-- video directo -->
+        <div class="video-responsive" style="width: 100%; max-width: 600px; margin: 1.5rem auto;  margin-top: 10px">
+            <iframe
+                title="LissCreativa. “Testimonios de Un boleto al cielo”. [Vídeo] YouTube. https://www.youtube.com/watch?v=AirTQ4PftFc"
+                src="https://www.youtube.com/embed/AirTQ4PftFc?rel=0&amp;wmode=transparent" frameborder="0"
+                allowfullscreen style="width: 100%; aspect-ratio: 16/9; min-height: 170px;">
+            </iframe>
+        </div>
+        <div style="margin: 2rem 0; margin-top: -10px">
             <div class="cta"
                 onclick="alert('Escríbenos por WhatsApp o márcanos al 55-2148-5031\n\no escríbenos al correo teatroviajeroelfenix@gmail.com ')">
-                <strong>¡Contáctanos e <br> inscríbete hoy mismo!</strong>
+                <strong>¡Contáctanos e <br />
+                    inscríbete hoy mismo!</strong>
             </div>
         </div>
     </section>
 
-    <footer style="margin-top: -2rem;">
-        <p>&copy; 2025 Taller Actoral El Fénix. <br>Todos los derechos reservados.</p>
-        <p>· WhatsApp: 55-2148-5031 <br>· Correo: teatroviajeroelfenix@gmail.com</p>
-        <br>
+    <!-- Botón para mostrar el video
+    <div style="text-align: center; margin: 2rem 0; margin-top: -20px">
+        <button onclick="mostrarVideo()" style="
+            padding: 10px 10px;
+            font-size: 18px;
+            cursor: pointer;
+            background-color: #c0392b;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        ">
+            🎥 Ver video de presentación
+        </button>
+    </div> -->
+
+    <!-- Contenedor del video responsivo -->
+    <div id="contenedorVideo" style="display: none; text-align: center; margin-bottom: 2rem;">
+        <div class="video-responsive" style="width: 100%; max-width: 600px; margin: 0 auto;">
+            <iframe src="https://www.youtube.com/embed/AirTQ4PftFc" title="Video de presentación" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen style="width: 95%; aspect-ratio: 16/9; min-height: 170px;">
+            </iframe>
+        </div>
+    </div>
+
+    <!-- Carrusel de imágenes -->
+    <div class="carrusel-container" style="margin-top: -30px">
+        <div class="carrusel" id="carrusel">
+            <img src="Fotos/FTeatro/1.webp" alt="Taller 1" />
+            <img src="Fotos/FTeatro/2.webp" alt="Taller 2" />
+            <img src="Fotos/FTeatro/3.webp" alt="Taller 3" />
+            <img src="Fotos/FTeatro/4.webp" alt="Taller 4" />
+            <img src="Fotos/FTeatro/5.webp" alt="Taller 5" />
+            <img src="Fotos/FTeatro/6.webp" alt="Taller 6" />
+            <img src="Fotos/FTeatro/7.webp" alt="Taller 7" />
+            <img src="Fotos/FTeatro/8.webp" alt="Taller 8" />
+            <img src="Fotos/FTeatro/9.webp" alt="Taller 9" />
+            <img src="Fotos/FTeatro/10.webp" alt="Taller 10" />
+            <img src="Fotos/FTeatro/11.webp" alt="Taller 11" />
+            <img src="Fotos/FTeatro/12.webp" alt="Taller 12" />
+            <img src="Fotos/FTeatro/13.webp" alt="Taller 13" />
+            <img src="Fotos/FTeatro/14.webp" alt="Taller 14" />
+            <img src="Fotos/FTeatro/15.webp" alt="Taller 15" />
+            <img src="Fotos/FTeatro/16.webp" alt="Taller 16" />
+            <img src="Fotos/FTeatro/17.webp" alt="Taller 17" />
+            <img src="Fotos/FTeatro/18.webp" alt="Taller 18" />
+            <img src="Fotos/FTeatro/19.webp" alt="Taller 19" />
+            <img src="Fotos/FTeatro/20.webp" alt="Taller 20" />
+            <img src="Fotos/FTeatro/21.webp" alt="Taller 21" />
+            <img src="Fotos/FTeatro/22.webp" alt="Taller 22" />
+            <img src="Fotos/FTeatro/23.webp" alt="Taller 23" />
+            <img src="Fotos/FTeatro/24.webp" alt="Taller 24" />
+            <img src="Fotos/FTeatro/25.webp" alt="Taller 25" />
+            <img src="Fotos/FTeatro/26.webp" alt="Taller 26" />
+            <img src="Fotos/FTeatro/27.webp" alt="Taller 27" />
+            <img src="Fotos/FTeatro/28.webp" alt="Taller 28" />
+            <img src="Fotos/FTeatro/29.webp" alt="Taller 29" />
+            <img src="Fotos/FTeatro/30.webp" alt="Taller 30" />
+        </div>
+        <div class="carrusel-controles">
+            <button onclick="moverCarrusel(-1)">⟨</button>
+            <button onclick="moverCarrusel(1)">⟩</button>
+        </div>
+    </div>
+
+    <footer style="margin-top: -2rem">
+        <p>
+            &copy; 2025 Taller Actoral El Fénix. <br />Todos los derechos
+            reservados.
+        </p>
+        <p>
+            · WhatsApp: 55-2148-5031 <br />· Correo: teatroviajeroelfenix@gmail.com
+        </p>
+        <br />
         <!-- LOGO MATRIZ INDUSTRIAS CONTRERAS -->
         <a href="https://industriascontreras.com" rel="noopener">
-            <img src="Fotos/Logos/LOGO_MATRIZ.webp" alt="Industrias Contreras" style="width:30px; height:40px;">
-            <p style="color: white;">Visita la matriz <br><strong>Industrias Contreras</strong></p>
+            <img src="Fotos/Logos/LOGO_MATRIZ.webp" alt="Industrias Contreras" style="width: 30px; height: 40px" />
+            <p style="color: white">
+                Visita la matriz <br /><strong>Industrias Contreras</strong>
+            </p>
         </a>
     </footer>
+    <script>
+        // Función para alternar el menú de navegación
+        function toggleMenu() {
+            const nav = document.getElementById("navMenu");
+            const btn = document.getElementById("menuBtn");
+            nav.classList.toggle("show");
 
+            // Cambia el ícono entre ☰ y ✖
+            if (nav.classList.contains("show")) {
+                btn.textContent = "✖";
+            } else {
+                btn.textContent = "☰";
+            }
+        }
+    </script>
+
+    <script>
+        const carrusel = document.getElementById("carrusel");
+        const imagenes = carrusel.getElementsByTagName("img");
+        let indice = 0;
+
+        function moverCarrusel(direccion) {
+            const container = document.querySelector('.carrusel-container');
+            const containerWidth = container.offsetWidth;
+            const imgWidth = imagenes[0].offsetWidth;
+
+            // ¿Cuántas imágenes caben por "pantalla"?
+            const imagenesPorVista = Math.floor(containerWidth / imgWidth);
+
+            // ¿Cuál es el índice máximo sin dejar espacios?
+            const maxIndice = imagenes.length - imagenesPorVista;
+
+            // Calculamos nuevo índice
+            indice += direccion;
+
+            if (indice < 0) {
+                indice = 0;
+            } else if (indice > maxIndice) {
+                indice = 0; // Aquí es donde hacemos que reinicie al principio
+            }
+
+            const desplazamiento = indice * imgWidth;
+            carrusel.style.transform = `translateX(-${desplazamiento}px)`;
+        }
+
+        // Cuando la ventana se redimensiona, reajusta la posición
+        window.addEventListener("resize", () => {
+            moverCarrusel(0); // Mantiene el índice pero recalcula ancho
+        });
+        // Avance automático cada 4 segundos
+        setInterval(() => {
+            moverCarrusel(1);
+        }, 1500); // Puedes cambiar 4000 por el tiempo que desees en milisegundos
+    </script>
+
+
+    <!-- Script para mostrar el video -->
+    <script>
+        function mostrarVideo() {
+            document.getElementById("contenedorVideo").style.display = "block";
+        }
+    </script>
 </body>
 
 </html>
