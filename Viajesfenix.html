@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Card Elite</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f4f6fa;
+            color: #1b1b1b;
+        }
+
+        header {
+            background-color: #003580;
+            color: white;
+            padding: 1rem;
+            position: relative;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        nav {
+            display: none;
+            flex-direction: column;
+            background: #003580;
+            padding: 1rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 0;
+            transition: background 0.3s;
+        }
+
+        nav a:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .hamburger {
+            cursor: pointer;
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .bar {
+            width: 25px;
+            height: 3px;
+            background-color: white;
+        }
+
+        .active {
+            display: flex;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 2rem;
+        }
+
+        .section {
+            margin-bottom: 3rem;
+        }
+
+        .carousel {
+            display: flex;
+            overflow-x: auto;
+            gap: 10px;
+            scroll-snap-type: x mandatory;
+        }
+
+        .carousel img {
+            height: 200px;
+            border-radius: 10px;
+            scroll-snap-align: center;
+            flex-shrink: 0;
+        }
+
+        footer {
+            background-color: #003580;
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+            font-size: 0.9rem;
+            border-top: 4px solid #1a73e8;
+        }
+
+        @media(min-width: 768px) {
+            nav {
+                display: flex !important;
+                flex-direction: row;
+                justify-content: flex-end;
+            }
+
+            nav a {
+                padding: 0 1rem;
+            }
+
+            .hamburger {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">Travel Card Elite</div>
+        <div class="hamburger" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <nav id="navMenu">
+            <a href="#">Inicio</a>
+            <a href="#comparativa">Comparativa</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <main class="container">
+
+        <section class="section">
+            <h1>Bienvenido a Travel Card Elite</h1>
+            <p>Somos una agencia de viajes aliada que ofrece verdaderos precios. No inflamos tarifas como otras
+                plataformas populares. Con nosotros, obtienes transparencia, atención personalizada y tarifas sin trucos
+                ni comisiones ocultas.</p>
+        </section>
+
+        <section class="section" id="comparativa">
+            <h2>¿Por qué somos mejores?</h2>
+            <p>Te mostramos una comparativa clara frente a otras plataformas:</p>
+            <ul>
+                <li><strong>Booking:</strong> Agrega comisión por cada reserva.</li>
+                <li><strong>Trivago:</strong> Muestra precios variables y redirecciona.</li>
+                <li><strong>Hoteles.com:</strong> Precios inflados por marketing.</li>
+                <li><strong>Travel Card Elite:</strong> Tarifas reales, contacto directo con hoteles y beneficios
+                    exclusivos.</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>Galería de destinos</h2>
+            <div class="carousel">
+                <img src="https://via.placeholder.com/300x200?text=Playa" alt="Playa">
+                <img src="https://via.placeholder.com/300x200?text=Montaña" alt="Montaña">
+                <img src="https://via.placeholder.com/300x200?text=Ciudad" alt="Ciudad">
+                <img src="https://via.placeholder.com/300x200?text=Hotel+de+lujo" alt="Hotel de lujo">
+            </div>
+        </section>
+
+        <section class="section" id="contacto">
+            <h2>Contáctanos</h2>
+            <p>Para más información o reservar, escríbenos y te atenderemos de inmediato. Tu viaje ideal está a un clic
+                de distancia.</p>
+        </section>
+
+    </main>
+
+    <footer>
+        Travel Card Elite © 2025 · Tu experiencia comienza con la verdad<br />
+        Diseño profesional con pasión por el viaje
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const nav = document.getElementById('navMenu');
+            nav.classList.toggle('active');
+        }
+    </script>
+
+</body>
+
+</html>
