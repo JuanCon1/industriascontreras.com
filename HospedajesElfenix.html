@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hospedajes el Fénix</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="Fotos/Iconos/HOSPEDAJES.ico" />
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f4f6fa;
+            color: #1b1b1b;
+        }
+
+        header {
+            background-color: #0000FF;
+            color: white;
+            padding: 1rem;
+            position: relative;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            text-align: center;
+        }
+
+        .logo img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+        }
+
+        nav {
+            display: none;
+            flex-direction: column;
+            padding: 1rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 0;
+            transition: background 0.3s;
+        }
+
+        nav a:hover {
+            background: #000000;
+        }
+
+        .hamburger {
+            cursor: pointer;
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .bar {
+            width: 25px;
+            height: 3px;
+            background-color: white;
+        }
+
+        .active {
+            display: flex;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 1rem;
+        }
+
+        .section {
+            margin-bottom: 1rem;
+        }
+
+        .carousel-wrapper {
+            position: relative;
+            max-width: 100%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        .carousel {
+            display: flex;
+            overflow-x: auto;
+            gap: 10px;
+            scroll-snap-type: x mandatory;
+            scroll-behavior: smooth;
+            padding: 0px 0;
+        }
+
+        .carousel-item {
+            scroll-snap-align: center;
+            flex-shrink: 0;
+            text-align: center;
+        }
+
+        .carousel img {
+            height: 220px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .carousel img:hover {
+            transform: scale(1.05);
+        }
+
+        .hotel-name {
+            margin-top: 5px;
+            font-weight: bold;
+        }
+
+        .arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0, 0, 0, 0.5);
+            border: none;
+            color: white;
+            font-size: 24px;
+            cursor: pointer;
+            padding: 10px;
+            border-radius: 50%;
+            z-index: 2;
+        }
+
+        .left {
+            left: 10px;
+        }
+
+        .right {
+            right: 10px;
+        }
+
+        /* Lightbox */
+        .lightbox {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .lightbox img {
+            max-width: 90%;
+            max-height: 80%;
+            margin-bottom: 10px;
+        }
+
+        .lightbox p {
+            color: white;
+            font-size: 18px;
+        }
+
+        .lightbox.show {
+            display: flex;
+        }
+
+        footer {
+            background-color: #003580;
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+            font-size: 0.9rem;
+            border-top: 4px solid #1a73e8;
+        }
+
+        @media(min-width: 768px) {
+            nav {
+                display: flex !important;
+                flex-direction: row;
+                justify-content: flex-end;
+            }
+
+            nav a {
+                padding: 0 1rem;
+            }
+        }
+
+        .enlace {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 14px 32px;
+            background: linear-gradient(90deg, #003580 0%, #1a73e8 100%);
+            color: #fff;
+            font-size: 1.1em;
+            font-weight: bold;
+            border: none;
+            border-radius: 30px;
+            text-decoration: none;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+            transition: background 0.3s, transform 0.2s;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="Fotos/Logos/HOSPEDAJES1.webp" alt="Logo HOSPEDAJES El Fénix"
+                style="display:block; margin:0 auto 10px auto; border-radius:50%;">
+            HOSPEDAJES EL FÉNIX<br><br>
+            <span style="font-size: 0.8em;">en alianza con</span> <br><br>
+            <img src="Fotos/Logos/HOTELES.webp" alt="Logo Travel Card Elite"
+                style="display:block; margin:0 auto 10px auto; border-radius:50%;">
+            TRAVEL CARD ELITE
+        </div>
+        <div class="hamburger" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <nav id="navMenu">
+            <a href="#">Inicio</a>
+            <a href="#comparativa">Comparativa</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="section" style="text-align: center;">
+            <h1>
+                <span style="font-size:1.4em;">Bienvenido a Hospedajes El Fénix</span> <br><br>
+                Te ofrecemos, a través de
+                <span style="color: #0000FF;">"TRAVEL CARD ELITE"</span>
+                los mejores precios en <span style="color: #0000FF;">"HOTELES"</span>. ¡Compruébalo!
+            </h1>
+            <p>Con nosotros obtienes transparencia, atención personalizada y tarifas sin trucos ni comisiones ocultas.
+            </p>
+        </section>
+
+        <section class="section" style="text-align: center;" id="comparativa">
+            <h3 style="color: red; font-weight: bold;">Ve por qué somos la mejor opción <br><br>Comparativa frente a
+                otras plataformas</h3>
+            <div class="video-responsive" style="
+                width: 100%;
+                max-width: 600px;
+                margin: 1.5rem auto;
+                margin-top: 10px;
+                ">
+                <iframe
+                    title="LissCreativa. “Testimonios de Un boleto al cielo”. [Vídeo] YouTube. https://www.youtube.com/watch?v=AirTQ4PftFc"
+                    src="https://www.youtube.com/embed/AirTQ4PftFc?rel=0&amp;wmode=transparent" frameborder="0"
+                    allowfullscreen style="width: 100%; aspect-ratio: 16/9; min-height: 170px">
+                </iframe>
+            </div>
+        </section>
+
+        <section class="section" style="text-align: center;">
+            <h2 style="color: green; font-weight: bold;">GALERÍA DE DESTINOS MX</h2>
+
+            <div class="carousel-wrapper">
+                <button class="arrow left" onclick="scrollCarousel(-1)">❮</button>
+
+                <div class="carousel" id="carousel">
+                    <!-- Repite esto por cada hotel -->
+                    <div class="carousel-item">
+                        <img src="Fotos/FHospedajes/canadian-huatulco.jpg" alt="Canadian Resort Huatulco"
+                            onclick="openLightbox(this)">
+                        <p class="hotel-name">Canadian Resort Huatulco</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Fotos/FHospedajes/canadian-vallarta.jpg" alt="Canadian Resort Vallarta"
+                            onclick="openLightbox(this)">
+                        <p class="hotel-name">Canadian Resort Vallarta</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Fotos/FHospedajes/canadian-veracruz.jpg" alt="Canadian Resort Veracruz"
+                            onclick="openLightbox(this)">
+                        <p class="hotel-name">Canadian Resort Veracruz</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Fotos/FHospedajes/Alba_suite_Acapulco.jpg" alt="Alba Suite Acapulco"
+                            onclick="openLightbox(this)">
+                        <p class="hotel-name">Alba Suite Acapulco</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Fotos/FHospedajes/Cerritos_Resort_Mazatlan.jpg" alt="Cerritos Resort Mazatlán"
+                            onclick="openLightbox(this)">
+                        <p class="hotel-name">Cerritos Resort Mazatlán</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Fotos/FHospedajes/Coral_Ixtapa_Ixtapa.jpg" alt="Coral Ixtapa"
+                            onclick="openLightbox(this)">
+                        <p class="hotel-name">Coral Ixtapa</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Fotos/FHospedajes/El_Presidente_Acapulco.jpg" alt="Hotel El Presidente Acapulco"
+                            onclick="openLightbox(this)">
+                        <p class="hotel-name">Hotel El Presidente Acapulco</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Fotos/FHospedajes/Hacienda_La_Purisima_Toluca.jpg" alt="Hacienda La Purísima, Toluca"
+                            onclick="openLightbox(this)">
+                        <p class="hotel-name">Hacienda La Purísima, Toluca</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Fotos/FHospedajes/Hacienda_Mazatlan.jpg" alt="Hacienda Mazatlán"
+                            onclick="openLightbox(this)">
+                        <p class="hotel-name">Hacienda Mazatlán</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Fotos/FHospedajes/Puerta_Del_Mar_Ixtapa_Guerrero.jpg"
+                            alt="Puerta del Mar, Ixtapa Guerrero" onclick="openLightbox(this)">
+                        <p class="hotel-name">Puerta del Mar, Ixtapa Guerrero</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Fotos/FHospedajes/Torres_Gemelas_Acapulco.jpg" alt="Torres Gemelas Acapulco"
+                            onclick="openLightbox(this)">
+                        <p class="hotel-name">Torres Gemelas Acapulco</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Fotos/FHospedajes/Villa_De_La_Plata_Gto.jpg" alt="Villa de la Plata, Guanajuato"
+                            onclick="openLightbox(this)">
+                        <p class="hotel-name">Villa de la Plata, Guanajuato</p>
+                    </div>
+                    <!-- Agrega más imágenes siguiendo este formato -->
+                </div>
+                <button class="arrow right" onclick="scrollCarousel(1)">❯</button>
+            </div>
+
+            <!-- Lightbox -->
+            <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+                <img id="lightbox-img" src="#" alt="">
+                <p id="lightbox-caption"></p>
+            </div>
+        </section>
+
+        <section class="section" id="contacto" style="text-align: center;">
+            <h2 style="color: green; font-weight: bold;">
+                Contáctanos
+                <p></p>55 2148 5031
+            </h2>
+            <h3>
+                Entra con estas credenciales: <br><br>
+                Número de afiliado: <b style="color: green; font-weight: bold;">Visitantejcg</b> <br><br>
+                Contraseña: <b style="color: green; font-weight: bold;">Abc123</b>
+            </h3>
+            <h3>Ir a</h3>
+            <div style="margin-top: -30px;">
+                <h2><a href="https://www.travelcardelite.com.mx/login.php" target="_blank" class="enlace"
+                        rel="noopener noreferrer">
+                        TRAVEL CARD ELITE
+                    </a>
+                </h2>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        © 2025 Hospedajes El Fénix <br><br> Tu experiencia comienza con la verdad<br />
+        <hr class="border-light" /><br />
+
+        <!-- LOGO MATRIZ INDUSTRIAS CONTRERAS -->
+        <div class="col-md-3 text-center flex-grow-1">
+            <a href="https://industriascontreras.com" rel="noopener">
+                <img src="Fotos/Logos/LOGO_MATRIZ.webp" alt="Industrias Contreras" style="width: 30px; height: 40px" />
+                <p class="m-0 text-white" style="color: white !important">
+                    Visita la matriz <br /><strong>Industrias Contreras</strong>
+                </p>
+            </a>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const nav = document.getElementById('navMenu');
+            nav.classList.toggle('active');
+        }
+    </script>
+    <script>
+        function scrollCarousel(direction) {
+            const carousel = document.getElementById("carousel");
+            const scrollAmount = 250; // Cambia este valor si lo necesitas
+            carousel.scrollBy({
+                left: direction * scrollAmount,
+                behavior: 'smooth'
+            });
+        }
+
+        function openLightbox(image) {
+            const lightbox = document.getElementById("lightbox");
+            const lightboxImg = document.getElementById("lightbox-img");
+            const caption = document.getElementById("lightbox-caption");
+
+            lightboxImg.src = image.src;
+            lightboxImg.alt = image.alt;
+            caption.textContent = image.alt;
+            lightbox.classList.add("show");
+        }
+
+        function closeLightbox() {
+            document.getElementById("lightbox").classList.remove("show");
+        }
+    </script>
+</body>
+
+</html>
