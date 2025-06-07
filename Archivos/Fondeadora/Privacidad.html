@@ -3,51 +3,114 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Privacidad - Fondeadora El Fénix</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fondeadora El Fénix</title>
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="../../Fotos/Iconos/FONDEADORA_ICO.ico" />
     <!-- Estilos CSS -->
-    <link rel="stylesheet" href="estilosSubCarpetas.css" />
+    <link rel="stylesheet" href="fondea.css">
 </head>
 
 <body>
-    <header>
-        <div class="container">
-            <h1>Fondeadora El Fénix</h1>
-            <nav>
-                <ul>
-                    <li><a href="../../Fondeadora_El_Fenix.html">Inicio</a></li>
-                    <li><a href="quienesSomos.html" aria-current="page">Quiénes Somos</a></li>
-                    <li><a href="Terminos.html">Términos y Condiciones</a></li>
-                    <li><a href="Legal_Seguridad.html">Aviso Legal y Seguridad</a></li>
-                </ul>
-            </nav>
+    <header class="header">
+        <img src="../../Fotos/Logos/FONDEADORA.webp" alt="Logo de fondeadora">
+        <h1><span class="linea1">FONDEADORA</span> <span class="linea2">EL FÉNIX</span></h1>
+        <p style="text-align:center;">
+            <span class="linea1">Ayudando a fondear escuelas y empresas...</span> <span class="linea2">sin que inviertan
+                un solo peso</span>
+        </p>
+        <div class="hamburger" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
         </div>
+        <nav id="navMenu">
+            <a href="../../Fondeadora_El_Fenix.html">Inicio</a>
+            <a href="Proyecto.html">Proyecto</a>
+            <a href="QuienesSomos.html">Quiénes Somos</a>
+            <a href="Terminos.html">Términos y Condiciones</a>
+            <a href="Legal_Seguridad.html">Legal y Seguridad</a>
+        </nav>
     </header>
 
-    <main>
-        <section class="about container">
-            <h2>Aviso de Privacidad</h2>
-            <p>
-                Fondeadora El Fénix protege y respeta tus datos personales. Toda la información recopilada será
-                utilizada
-                exclusivamente para fines administrativos y de contacto, conforme a la Ley Federal de Protección de
-                Datos
-                Personales en Posesión de los Particulares.
-            </p>
-            <p>
-                No compartimos tu información con terceros sin tu consentimiento. Puedes ejercer tus derechos ARCO
-                (Acceso,
-                Rectificación, Cancelación u Oposición) en cualquier momento escribiéndonos a: <a
-                    href="mailto:contacto@fondeadoraelfenix.com">contacto@fondeadoraelfenix.com</a>
-            </p>
-        </section>
-    </main>
+    <div class="seccion">
+        <div style="text-align:center;">
+            <h2 class="titulo-seccion" style="font-weight:bold; display:inline-block;  margin-top: -5px;">Aviso de
+                Privacidad
+            </h2>
+        </div>
+        <h2>Conoce tus derechos</h2>
+        <p>
+            Fondeadora El Fénix protege y respeta tus datos personales. Toda la información recopilada será
+            utilizada
+            exclusivamente para fines administrativos y de contacto, conforme a la Ley Federal de Protección de
+            Datos
+            Personales en Posesión de los Particulares.
+        </p>
+        <p>
+            No compartimos tu información con terceros sin tu consentimiento. Puedes ejercer tus derechos ARCO
+            (Acceso,
+            Rectificación, Cancelación u Oposición) en cualquier momento escribiéndonos a: <a
+                href="mailto:contacto@industriascontreras.com">contacto@industriascontreras.com</a>
+        </p>
+    </div>
+
+    <div class="seccion">
+        <h2>¡Ahora es cuando!</h2>
+        <p>Ya hay escuelas, empresas y asociaciones beneficiándose con este modelo solidario.</p>
+        <div style="text-align:center;">
+            <div class="btn" onclick="alert(
+                '📞 Tú eliges:\n' +
+                '     •   WhatsApp o llamada: 55-2148-5031\n\n' +
+                '📞 Oficina:\n' +
+                '     •   llamada: 55-6395-6800\n\n' +
+                '📧 Correo electrónico:\n' +
+                '     •   contacto@industriascontreras.com'
+                )">
+                <strong>¡Contáctanos para agendar cita!</strong>
+            </div>
+        </div>
+    </div>
 
     <footer>
-        <p>&copy; 2025 Fondeadora El Fénix</p>
+        <p style="text-align:center;">&copy; 2025 Fondeadora El Fénix <br> Un proyecto de Industrias Contreras</p>
+        <hr class="border-light" /><br />
+
+        <!-- LOGO MATRIZ INDUSTRIAS CONTRERAS -->
+        <div class="col-md-3 text-center flex-grow-1">
+            <a href="https://industriascontreras.com" rel="noopener">
+                <img src="../../Fotos/Logos/LOGO_MATRIZ.webp" alt="Industrias Contreras"
+                    style="width: 30px; height: 40px" />
+                <p class="m-0 text-white" style="color: white !important; text-align:center;">
+                    Visita la matriz <br /><strong>Industrias Contreras</strong>
+                </p>
+            </a>
+        </div>
     </footer>
+
+    <script>
+        function toggleMenu() {
+            const nav = document.getElementById('navMenu');
+            const hamburger = document.querySelector('.hamburger');
+            nav.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        }
+
+        // Cierra el menú al hacer clic fuera de él
+        document.addEventListener('click', function (event) {
+            const nav = document.getElementById('navMenu');
+            const hamburger = document.querySelector('.hamburger');
+
+            const clickedInsideMenu = nav.contains(event.target);
+            const clickedOnHamburger = hamburger.contains(event.target);
+
+            if (!clickedInsideMenu && !clickedOnHamburger) {
+                nav.classList.remove('active');
+                hamburger.classList.remove('active');
+            }
+        });
+    </script>
+
 </body>
 
 </html>

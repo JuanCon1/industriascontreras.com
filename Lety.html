@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fondeadora El Fénix</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="Fotos/Iconos/FONDEADORA_ICO.ico" />
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Raleway', sans-serif;
+            background: #f7f7f7;
+            color: #333;
+        }
+
+        .header img {
+            width: 90px;
+            height: 100px;
+            object-fit: cover;
+        }
+
+        header {
+            background: linear-gradient(to right, #8e2de2, #fb1a02);
+            color: white;
+            padding: 0.7rem 0.3rem;
+            text-align: center;
+            position: relative;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        /* Hamburguesa */
+        .hamburger {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            position: absolute;
+            top: 2rem;
+            right: 2rem;
+            z-index: 20;
+            transition: background 0.2s;
+            border-radius: 50%;
+        }
+
+        .hamburger:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .hamburger .bar {
+            width: 28px;
+            height: 4px;
+            background-color: white;
+            border-radius: 2px;
+            margin: 3px 0;
+            transition: all 0.3s;
+        }
+
+        /* Animación hamburguesa activa */
+        .hamburger.active .bar:nth-child(1) {
+            transform: translateY(7px) rotate(45deg);
+        }
+
+        .hamburger.active .bar:nth-child(2) {
+            opacity: 0;
+        }
+
+        .hamburger.active .bar:nth-child(3) {
+            transform: translateY(-7px) rotate(-45deg);
+        }
+
+        /* Menú */
+        #navMenu {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            background-color: #8e2de2;
+            padding: 1rem;
+            position: absolute;
+            top: 100px;
+            right: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+            z-index: 10;
+            min-width: 160px;
+        }
+
+        #navMenu.active {
+            display: flex;
+            animation: fadeIn 0.3s;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        #navMenu a {
+            color: white;
+            margin: 0 1rem;
+            padding: 0.5rem 1rem;
+            font-weight: bold;
+            border-radius: 4px;
+            transition: background 0.2s;
+        }
+
+        #navMenu a:hover {
+            background: #fb1a02;
+            color: #fff;
+        }
+
+        /* Desktop: mostrar menú y ocultar hamburguesa */
+        @media (min-width: 768px) {
+            .hamburger {
+                display: none;
+            }
+
+            #navMenu {
+                display: flex !important;
+                position: static;
+                flex-direction: row;
+                background-color: transparent;
+                box-shadow: none;
+                padding: 0;
+                min-width: unset;
+            }
+
+            #navMenu a:hover {
+                background: rgba(255, 255, 255, 0.15);
+            }
+        }
+
+        section {
+            max-width: 1000px;
+            margin: auto;
+            padding: 1.5rem 1.4rem;
+        }
+
+        .highlight {
+            background: #ffd166;
+            padding: 0.5rem 1rem;
+            display: inline-block;
+            font-weight: bold;
+            border-radius: 0.3rem;
+            color: #000;
+        }
+
+        .card {
+            background: white;
+            border-radius: 1rem;
+            padding: 0.5rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 1rem 0;
+        }
+
+        .card h2 {
+            color: #1d3557;
+            text-align: center;
+        }
+
+        .btn {
+            background: #118ab2;
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 2rem;
+            font-size: 1.1rem;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 1rem;
+            transition: background 0.2s;
+        }
+
+        .btn:hover {
+            background: #0a6c8e;
+        }
+
+        footer {
+            background: #073b4c;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        a {
+            text-underline-offset: 3px;
+            text-decoration-thickness: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <img src="Fotos/Logos/FONDEADORA.webp" alt="Logo de fondeadora">
+        <h1>FONDEADORA EL FÉNIX</h1>
+        <p>Apoyando el futuro de las escuelas y empresas... sin que inviertan un solo peso</p>
+
+        <div class="hamburger" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <nav id="navMenu">
+            <a href="Archivos/Fondeadora/Proyecto.html">Proyecto</a>
+            <a href="Archivos/Fondeadora/QuienesSomos.html">Quiénes Somos</a>
+            <a href="Archivos/Fondeadora/Privacidad.html">Aviso de Privacidad</a>
+            <a href="Archivos/Fondeadora/Terminos.html">Términos y Condiciones</a>
+            <a href="Archivos/Fondeadora/Legal_Seguridad.html">Legal y Seguridad</a>
+        </nav>
+    </header>
+
+    <section>
+        <div class="card" style="margin-top: -10px;">
+            <h2>¿Qué hacemos?</h2>
+            <p style="text-align: justify; margin-left: 0.5em;">
+                <span class="highlight" style="text-decoration: none; color: inherit;">
+                    Fondeadora El Fénix
+                </span>
+                es un
+                <a href="Archivos/Fondeadora/Proyecto.html"
+                    style="text-decoration: underline; color: inherit; font-weight: bold;">
+                    proyecto</a>
+                con iniciativa solidaria que ofrece a asociaciones, escuelas y empresas la oportunidad de obtener fondos
+                económicos para:
+            </p>
+
+
+            <ul>
+                <li>Eventos escolares (graduaciones, convivios, excursiones)</li>
+                <li>Uniformes, útiles, mochilas, calzado</li>
+                <li>Mejoras: pintura, mobiliario, internet, limpieza</li>
+                <li>Proyectos como equinoterapia, seguridad, campañas de salud</li>
+                <li><strong>¡Todo lo que necesites!</strong></li>
+            </ul>
+            <p style="text-align: justify; margin-left: 0.5em;">¿Cómo lo logramos? <br>Mediante la distribución de un
+                libro con un mensaje
+                poderoso sobre prevención del
+                VIH/sida, sin que tú o tu institución tengan que invertir dinero.
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>¿Cómo funciona nuestro sistema?</h2>
+            <ol>
+                <li>Te damos ciertos ejemplares del libro <strong>"Léeme y sabrás qué es el VIH/sida"</strong>.</li>
+                <li>Los alumnos o empleados los venden a la comunidad (familia, vecinos, amigos, etc.) a $135 pesos.
+                </li>
+                <li><strong>Te quedas con $ 95. pesos</strong> por cada uno para cubrir tus necesidades
+                    institucionales.</li>
+                <li>Los $ 40. pesos restante se destina a la producción del libro y nuestra ganancia.</li>
+            </ol>
+            <p style="text-align: justify; margin-left: 0.5em;"><strong>No hay letra pequeña, no hay costos escondidos.
+                    Solo ganancias para
+                    ti, tu causa y la
+                    sociedad.</strong>
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>¿Por qué este libro?</h2>
+            <ul>
+                <li>Escrito con claridad y sensibilidad para informar, prevenir y crear conciencia.</li>
+                <li>Al compartirlo, ayudas tanto a tu institución como a la comunidad.</li>
+                <li>¡Los libros son cultura!</li>
+            </ul>
+        </div>
+
+        <div class="card" style="text-align: center;">
+            <h2>¡Súmate al cambio!</h2>
+            <p>Ya hay escuelas, empresas y asociaciones beneficiándose con este modelo solidario.</p>
+            <a class="btn"
+                href="mailto:contacto@industriascontreras.com?subject=Quiero%20participar%20en%20la%20Fondeadora%20El%20F%C3%A9nix">Contáctanos
+                para comenzar</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Fondeadora El Fénix <br> Un proyecto de Industrias Contreras</p>
+        <hr class="border-light" /><br />
+
+        <!-- LOGO MATRIZ INDUSTRIAS CONTRERAS -->
+        <div class="col-md-3 text-center flex-grow-1">
+            <a href="https://industriascontreras.com" rel="noopener">
+                <img src="Fotos/Logos/LOGO_MATRIZ.webp" alt="Industrias Contreras" style="width: 30px; height: 40px" />
+                <p class="m-0 text-white" style="color: white !important">
+                    Visita la matriz <br /><strong>Industrias Contreras</strong>
+                </p>
+            </a>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const nav = document.getElementById('navMenu');
+            const hamburger = document.querySelector('.hamburger');
+            nav.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        }
+
+        // Cierra el menú al hacer clic fuera de él
+        document.addEventListener('click', function (event) {
+            const nav = document.getElementById('navMenu');
+            const hamburger = document.querySelector('.hamburger');
+
+            const clickedInsideMenu = nav.contains(event.target);
+            const clickedOnHamburger = hamburger.contains(event.target);
+
+            if (!clickedInsideMenu && !clickedOnHamburger) {
+                nav.classList.remove('active');
+                hamburger.classList.remove('active');
+            }
+        });
+    </script>
+
+</body>
+
+</html>
