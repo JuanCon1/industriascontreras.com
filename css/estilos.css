@@ -1,11 +1,11 @@
 /* ====== HEAD ====== */
 .header {
   background-color: #000;
-  height: 120px; 
+  height: 120px;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative; 
+  position: relative;
   width: 100%;
   z-index: 999;
   gap: 10px; /* Espacio entre logo y texto */
@@ -276,7 +276,7 @@ body {
 
 /* FONDEADORA EL FÉNIX - Verde dólar */
 .card.fondeadora {
-  background-color: #d9fdd3;
+  background-color: #0d2f2f;
 }
 
 .card.fondeadora a {
@@ -285,7 +285,7 @@ body {
 
 .card.fondeadora h3,
 .card.fondeadora p {
-  color: #000;
+  color: #f8f5f5;
 }
 
 .card.fondeadora a:hover {

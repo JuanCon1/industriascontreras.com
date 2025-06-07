@@ -180,7 +180,11 @@
             border-top: 4px solid #1a73e8;
         }
 
-        @media(min-width: 768px) {
+        @media (min-width: 768px) {
+            .hamburger {
+                display: none !important;
+            }
+
             nav {
                 display: flex !important;
                 flex-direction: row;
@@ -213,40 +217,38 @@
     <header>
         <div class="logo">
             <img src="Fotos/Logos/HOSPEDAJES1.webp" alt="Logo HOSPEDAJES El Fénix"
-                style="display:block; margin:0 auto 10px auto; border-radius:50%;">
-            HOSPEDAJES EL FÉNIX<br><br>
-            <span style="font-size: 0.8em;">en alianza con</span> <br><br>
+                style="display:block; margin:0 auto 15px auto; border-radius:50%;">
+            HOSPEDAJES EL FÉNIX<br>
+            <span style="font-size: 0.8em;">en alianza con</span><br>
             <img src="Fotos/Logos/HOTELES.webp" alt="Logo Travel Card Elite"
-                style="display:block; margin:0 auto 10px auto; border-radius:50%;">
+                style="display:block; margin:0 auto 15px auto; border-radius:50%;">
             TRAVEL CARD ELITE
-        </div>
+            <!-- Botón de menú hamburguesa para dispositivos móviles
         <div class="hamburger" onclick="toggleMenu()">
             <div class="bar"></div>
             <div class="bar"></div>
             <div class="bar"></div>
-        </div>
+        </div> -->
+            <!-- Menú de navegación principal
         <nav id="navMenu">
             <a href="#">Inicio</a>
             <a href="#comparativa">Comparativa</a>
-            <a href="#contacto">Contacto</a>
-        </nav>
+        </nav> -->
+        </div>
     </header>
 
     <main class="container">
-        <section class="section" style="text-align: center;">
+        <section class="section" style="text-align: center; margin-top: -20px;">
             <h1>
-                <span style="font-size:1.4em;">Bienvenido a Hospedajes El Fénix</span> <br><br>
-                Te ofrecemos, a través de
-                <span style="color: #0000FF;">"TRAVEL CARD ELITE"</span>
-                los mejores precios en <span style="color: #0000FF;">"HOTELES"</span>. ¡Compruébalo!
+                Te ofrecemos los mejores precios en <span style="color: #0000FF;">"HOTELES"</span>. ¡Compruébalo!
             </h1>
-            <p>Con nosotros obtienes transparencia, atención personalizada y tarifas sin trucos ni comisiones ocultas.
+            <p>Con nosotros obtienes transparencia, atención personalizada y tarifas sin comisiones ocultas.
             </p>
         </section>
 
         <section class="section" style="text-align: center;" id="comparativa">
-            <h3 style="color: red; font-weight: bold;">Ve por qué somos la mejor opción <br><br>Comparativa frente a
-                otras plataformas</h3>
+            <h3 style="color: red; font-weight: bold;">¡Somos la mejor opción! <p></p>Ve la Comparativa de
+                plataformas</h3>
             <div class="video-responsive" style="
                 width: 100%;
                 max-width: 600px;

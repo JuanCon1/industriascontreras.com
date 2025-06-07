@@ -3,103 +3,161 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Quiénes Somos - Fondeadora El Fénix</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fondeadora El Fénix</title>
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="../../Fotos/Iconos/FONDEADORA_ICO.ico" />
     <!-- Estilos CSS -->
-    <link rel="stylesheet" href="estilosSubCarpetas.css" />
+    <link rel="stylesheet" href="fondea.css">
 </head>
 
 <body>
-    <header>
-        <div class="container">
-            <h1>Fondeadora El Fénix</h1>
-            <nav>
-                <ul>
-                    <li><a href="../../Fondeadora_El_Fenix.html">Inicio</a></li>
-                    <li><a href="Privacidad.html">Aviso de Privacidad</a></li>
-                    <li><a href="Terminos.html">Términos y Condiciones</a></li>
-                    <li><a href="Legal_Seguridad.html">Aviso Legal y Seguridad</a></li>
-                </ul>
-            </nav>
+    <header class="header">
+        <img src="../../Fotos/Logos/FONDEADORA.webp" alt="Logo de fondeadora">
+        <h1><span class="linea1">FONDEADORA</span> <span class="linea2">EL FÉNIX</span></h1>
+        <p style="text-align:center;">
+            <span class="linea1">Ayudando a fondear escuelas y empresas...</span> <span class="linea2">sin que inviertan
+                un solo peso</span>
+        </p>
+        <div class="hamburger" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
         </div>
+        <nav id="navMenu">
+            <a href="../../Fondeadora_El_Fenix.html">Inicio</a>
+            <a href="Proyecto.html">Proyecto</a>
+            <a href="Privacidad.html">Aviso de Privacidad</a>
+            <a href="Terminos.html">Términos y Condiciones</a>
+            <a href="Legal_Seguridad.html">Legal y Seguridad</a>
+        </nav>
     </header>
 
-    <main>
-        <section class="about container">
-            <h2>¿Quiénes Somos?</h2>
-            <p>
-                Fondeadora El Fénix es una iniciativa solidaria, legal y transparente, comprometida con el impulso de
-                proyectos comunitarios, educativos y sociales.
-            </p>
-            <p>
-                Apoyamos escuelas, asociaciones y negocios mediante campañas de recaudación responsables, ofreciendo
-                herramientas legales, materiales y asesoría continua.
-            </p>
-            <p>
-                Nuestro compromiso es con la honestidad, el bien común y el impacto positivo en la comunidad.
-            </p>
+    <div class="seccion">
+        <div style="text-align:center;">
+            <h2 class="titulo-seccion" style="font-weight:bold; display:inline-block;  margin-top: -5px;">Quiénes Somos
+            </h2>
+        </div>
+        <h2>Conócenos</h2>
+        <p>
+            <strong>Fondeadora El Fénix</strong> es una iniciativa solidaria, legal y transparente, comprometida con el
+            impulso de
+            proyectos comunitarios, educativos y sociales.
+        </p>
+        <p>
+            Apoyamos escuelas, asociaciones y negocios mediante campañas de recaudación responsables, ofreciendo
+            herramientas legales, materiales y asesoría continua.
+        </p>
+        <p>
+            Nuestro compromiso es con la honestidad, el bien común y el impacto positivo en la comunidad.
+        </p>
+        <h3><span class="resaltado-azul">INDUSTRIAS</span> <span class="resaltado-rojo">CONTRERAS</span></h3>
+        <p>Se creó el 20 de marzo de 1989 en apenas 12 m² con la idea de llevar a cabo como empresa netamente
+            nacional: productos, bienes y servicios de la mejor calidad mundial para distinguirse y poner el
+            nombre de México en alto. A más de 35 años de ese día, se ha convertido actualmente en:
+            <a href="https://industriascontreras.com" target="_blank" rel="noopener"
+                style="color:blue; text-decoration:underline;"><strong>PRODUCTORA, IMPORTADORA, EXPORTADORA,
+                    DISTRIBUIDORA, ENVASADORA, <u>FONDEADORA</u> Y
+                    COMERCIALIZADORA DE PRODUCTOS, BIENES Y SERVICIOS EN GENERAL</strong></a>, contando entre
+            otras cosas con un gran historial de obras de teatro, que forman parte de una posible "Opción b" en
+            vez de los libros. Somos pioneros en México en recaudación de fondos con estos sistemas.
+        </p>
+    </div>
+    <div class="seccion">
+        <div class="titulo-seccion">NUESTRA MISIÓN:</div>
+        <ul>
+            <li>Ser una empresa 100 % mexicana y exitosa que confía en NPC, que genera utilidades y
+                beneficios de manera sustentable.</li>
+            <li>Satisfacer y retener al cliente dando la excelencia con los protocolos correspondientes.
+            </li>
+            <li>Ser competitivos y confiables planteando programas transparentes que benefician al entorno
+                social.</li>
+        </ul>
+    </div>
 
-            <h1><span class="resaltado-azul">INDUSTRIAS</span> <span class="resaltado-rojo">CONTRERAS</span></h1>
+    <div class="seccion">
+        <div class="titulo-seccion">NUESTRA VISIÓN:</div>
+        <ul>
+            <li>Seguir siendo un equipo de colaboradores competentes, comprometidos y satisfechos.</li>
+            <li>Continuar en una constante a nuestros clientes, socios, patrocinadores y colaboradores con
+                innovaciones confiables y sencillas ofreciendo servicios de excelencia para obtener
+                resultados sobresalientes.</li>
+        </ul>
+    </div>
 
-            <p>Se creó el 20 de marzo de 1989 en apenas 12 m² con la idea de llevar a cabo como empresa netamente
-                nacional: productos, bienes y servicios de la mejor calidad mundial para distinguirse y poner el
-                nombre de México en alto. A más de 35 años de ese día, se ha convertido actualmente en:
-                <strong>PRODUCTORA, IMPORTADORA, EXPORTADORA, DISTRIBUIDORA, ENVASADORA, <u>FONDEADORA</u> Y
-                    COMERCIALIZADORA DE <u>PRODUCTOS, BIENES Y SERVICIOS EN GENERAL</u></strong>, contando entre
-                otras cosas con un gran historial de obras de teatro, que forman parte de una posible "Opción b" en
-                vez de los libros. Somos pioneros en México en recaudación de fondos con estos sistemas.
-            </p>
+    <div class="seccion">
+        <div class="titulo-seccion">NUESTROS PRINCIPIOS:</div>
+        <ul>
+            <li>Producir la mejora continua de nuestros procesos.</li>
+            <li>Conservar la excelencia en los productos, bienes y servicios que ofrecemos.</li>
+            <li>Mantener siempre una actitud positiva y compartir "nuestros valores" con nuestros
+                colaboradores, clientes, patrocinadores y socios comerciales con el fin de crear un ambiente
+                de armonía.</li>
+        </ul>
+    </div>
 
-            <div class="seccion">
-                <div class="titulo-seccion">NUESTRA MISIÓN:</div>
-                <ul>
-                    <li>Ser una empresa 100 % mexicana y exitosa que confía en NPC, que genera utilidades y
-                        beneficios de manera sustentable.</li>
-                    <li>Satisfacer y retener al cliente dando la excelencia con los protocolos correspondientes.
-                    </li>
-                    <li>Ser competitivos y confiables planteando programas transparentes que benefician al entorno
-                        social.</li>
-                </ul>
+    <div class="seccion">
+        <div class="titulo-seccion">NUESTROS VALORES:</div>
+        <p>Honestidad, fe, sencillez, humildad, respeto, alto desempeño, puntualidad, responsabilidad y
+            profesionalismo.</p>
+    </div>
+
+    <div class="seccion">
+        <h2>¡Ahora es cuando!</h2>
+        <p>Ya hay escuelas, empresas y asociaciones beneficiándose con este modelo solidario.</p>
+        <div style="text-align:center;">
+            <div class="btn" onclick="alert(
+                '📞 Tú eliges:\n' +
+                '     •   WhatsApp o llamada: 55-2148-5031\n\n' +
+                '📞 Oficina:\n' +
+                '     •   llamada: 55-6395-6800\n\n' +
+                '📧 Correo electrónico:\n' +
+                '     •   contacto@industriascontreras.com'
+                )">
+                <strong>¡Contáctanos para agendar cita!</strong>
             </div>
-
-            <div class="seccion">
-                <div class="titulo-seccion">NUESTRA VISIÓN:</div>
-                <ul>
-                    <li>Seguir siendo un equipo de colaboradores competentes, comprometidos y satisfechos.</li>
-                    <li>Continuar en una constante a nuestros clientes, socios, patrocinadores y colaboradores con
-                        innovaciones confiables y sencillas ofreciendo servicios de excelencia para obtener
-                        resultados sobresalientes.</li>
-                </ul>
-            </div>
-
-            <div class="seccion">
-                <div class="titulo-seccion">NUESTROS PRINCIPIOS:</div>
-                <ul>
-                    <li>Producir la mejora continua de nuestros procesos.</li>
-                    <li>Conservar la excelencia en los productos, bienes y servicios que ofrecemos.</li>
-                    <li>Mantener siempre una actitud positiva y compartir "nuestros valores" con nuestros
-                        colaboradores, clientes, patrocinadores y socios comerciales con el fin de crear un ambiente
-                        de armonía.</li>
-                </ul>
-            </div>
-
-            <div class="seccion">
-                <div class="titulo-seccion">NUESTROS VALORES:</div>
-                <p>Honestidad, fe, sencillez, humildad, respeto, alto desempeño, puntualidad, responsabilidad y
-                    profesionalismo.</p>
-            </div>
-
-
-        </section>
-    </main>
+        </div>
+    </div>
 
     <footer>
-        <div class="container">
-            <p>&copy; 2025 Fondeadora El Fénix</p>
+        <p style="text-align:center;">&copy; 2025 Fondeadora El Fénix <br> Un proyecto de Industrias Contreras</p>
+        <hr class="border-light" /><br />
+
+        <!-- LOGO MATRIZ INDUSTRIAS CONTRERAS -->
+        <div class="col-md-3 text-center flex-grow-1">
+            <a href="https://industriascontreras.com" rel="noopener">
+                <img src="../../Fotos/Logos/LOGO_MATRIZ.webp" alt="Industrias Contreras"
+                    style="width: 30px; height: 40px" />
+                <p class="m-0 text-white" style="color: white !important; text-align:center;">
+                    Visita la matriz <br /><strong>Industrias Contreras</strong>
+                </p>
+            </a>
         </div>
     </footer>
+
+    <script>
+        function toggleMenu() {
+            const nav = document.getElementById('navMenu');
+            const hamburger = document.querySelector('.hamburger');
+            nav.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        }
+
+        // Cierra el menú al hacer clic fuera de él
+        document.addEventListener('click', function (event) {
+            const nav = document.getElementById('navMenu');
+            const hamburger = document.querySelector('.hamburger');
+
+            const clickedInsideMenu = nav.contains(event.target);
+            const clickedOnHamburger = hamburger.contains(event.target);
+
+            if (!clickedInsideMenu && !clickedOnHamburger) {
+                nav.classList.remove('active');
+                hamburger.classList.remove('active');
+            }
+        });
+    </script>
+
 </body>
 
 </html>

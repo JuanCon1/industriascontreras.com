@@ -4,150 +4,176 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto Fondeadora El Fénix - Industrias Contreras</title>
+    <title>Fondeadora El Fénix</title>
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="../../Fotos/Iconos/FONDEADORA_ICO.ico" />
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, sans-serif;
-            margin: 0;
-            padding: 20px;
-            background-color: #f9f9f9;
-            line-height: 1.6;
-            color: #333;
-        }
-
-        header {
-            background: linear-gradient(to right, #8e2de2, #fb1a02);
-            color: white;
-            padding: 2rem;
-            text-align: center;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 2.5rem;
-        }
-
-        .seccion {
-            max-width: 900px;
-            margin: 40px auto;
-            background: #fff;
-            border-radius: 8px;
-            padding: 2rem;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        h2 {
-            color: #8B0000;
-            margin-top: 0;
-            border-bottom: 2px solid #FFD700;
-            padding-bottom: 0.5rem;
-        }
-
-        h3 {
-            color: #fb1a02;
-            margin-top: 1.5rem;
-        }
-
-        ul {
-            margin-left: 1.2rem;
-        }
-
-        li {
-            margin-bottom: 0.5rem;
-        }
-
-        .negrita {
-            font-weight: bold;
-        }
-
-        footer {
-            text-align: center;
-            margin-top: 3rem;
-            padding: 1rem;
-            font-size: 0.9rem;
-            color: #666;
-        }
-    </style>
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="fondea.css">
 </head>
 
 <body>
-
-    <header>
-        <h1>FONDEADORA EL FÉNIX</h1>
-        <p>Proyecto de recaudación de fondos para beneficio de la escuela y su alumnado</p>
+    <header class="header">
+        <img src="../../Fotos/Logos/FONDEADORA.webp" alt="Logo de fondeadora">
+        <h1><span class="linea1">FONDEADORA</span> <span class="linea2">EL FÉNIX</span></h1>
+        <p style="text-align:center;">
+            <span class="linea1">Ayudando a fondear escuelas y empresas...</span> <span class="linea2">sin que inviertan
+                un solo peso</span>
+        </p>
+        <div class="hamburger" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <nav id="navMenu">
+            <a href="../../Fondeadora_El_Fenix.html">Inicio</a>
+            <a href="QuienesSomos.html">Quiénes Somos</a>
+            <a href="Privacidad.html">Aviso de Privacidad</a>
+            <a href="Terminos.html">Términos y Condiciones</a>
+            <a href="Legal_Seguridad.html">Legal y Seguridad</a>
+        </nav>
     </header>
 
     <div class="seccion">
-        <h2>Presentación</h2>
-        <p><strong>Fondeadora El Fénix</strong>, es una filial de <strong>Industrias Contreras</strong>, empresa 100%
-            mexicana que ofrece una propuesta de colaboración
-            social, cultural y económica en beneficio de los colegios del país que deseen participar para cubrir
-            necesidades fuera del presupuesto escolar.</p>
-        <p>Los invitamos a participar <strong>sin inversión alguna</strong> por parte del colegio, el personal docente,
-            los estudiantes ni ningún otro actor. Esta iniciativa es completamente legal y cuenta con mecanismos de
-            control para garantizar el buen manejo de los recursos recaudados. Los alumnos <strong>no compran</strong>
-            el libro, <strong>lo venden</strong>.</p>
+        <div style="text-align:center;">
+            <h2 class="titulo-seccion" style="font-weight:bold; display:inline-block;  margin-top: -5px;">Proyecto
+            </h2>
+        </div>
+        <h2>Propósito</h2>
+        <p>
+            Obtener la máxima recaudación de fondos en función de las
+            <span style="font-weight:bold; color:#8b0000;">Necesidades / Beneficios</span> específicos de la escuela o
+            empresa, mediante un
+            <span style="font-weight:bold; color:#8b0000;">Esquema financiero</span> basado en la venta de un
+            <span style="font-weight:bold; color:#8b0000;">Libro</span> de
+            interés general (VIH/Sida), realizada por estudiantes o empleados a conocidos, vecinos, amigos y familiares,
+            siguiendo una
+            <span style="font-weight:bold; color:#8b0000;">Ruta crítica</span> bien estructurada que asegure el buen
+            funcionamiento del proyecto.
+        </p>
+    </div>
 
-        <h3>Objetivo</h3>
-        <p>Obtener la máxima recaudación de fondos con base en las necesidades de la escuela y/o sus alumnos, mediante
-            la venta de un libro de interés general (VIH/Sida) por parte de los estudiantes a conocidos, vecinos, amigos
-            y familiares.</p>
+    <div class="seccion">
+        <h2>Necesidades / Beneficios</h2>
+        <ul>
+            <li><strong>Apoyos:</strong> becas, uniformes, útiles, herramientas, instrumentos,
+                mochilas, calzado y lentes graduados.</li>
+            <li><strong>Campañas de salud:</strong> equinoterapia, acción contra piojos, atención médica
+                básica, promoción de la higiene.</li>
+            <li><strong>Eventos:</strong> graduaciones, convivios, actividades de fin de curso o año
+                y excursiones educativas.</li>
+            <li><strong>Infraestructura y mobiliario:</strong> adquisición de computadoras, pupitres, pizarrones,
+                cisternas, pintura general y antigraffiti.</li>
+            <li><strong>Mejoras generales:</strong> limpieza profunda, poda de árboles, retiro de escombros,
+                mantenimiento general y remodelaciones.</li>
+            <li><strong>Seguridad e internet:</strong> implementación de instrumentos de seguridad, instalación de
+                cámaras e
+                internet.</li>
+            <li><strong>¡Todo lo que necesites!</strong></li>
+        </ul>
+    </div>
 
-        <h3>Esquema financiero por libro vendido</h3>
+    <div class="seccion">
+        <h2>Esquema financiero por libro</h2>
         <ul>
             <li>Precio de venta: <strong>$135</strong></li>
-            <li><strong>$75</strong> para la escuela</li>
-            <li><strong>$10</strong> para el alumno</li>
+            <li><strong>$75</strong> para la escuela / empresa</li>
+            <li><strong>$10</strong> para el alumno / empleado</li>
             <li><strong>$10</strong> como donativo a una institución (orfanatos, asilos, etc.)</li>
             <li><strong>$30</strong> para la reinversión del libro y operación</li>
-            <li><strong>$10</strong> para la empresa</li>
+            <li><strong>$10</strong> nuestra ganancia</li>
         </ul>
+    </div>
 
-        <h3>Posibles beneficios para la escuela</h3>
+    <div class="seccion">
+        <h2>¿Por qué este libro?</h2>
         <ul>
-            <li>Equinoterapia, uniformes, mochilas, útiles, calzado</li>
-            <li>Becas, lentes, campaña contra piojos, eventos de fin de curso</li>
-            <li>Excursiones, computadoras, pupitres, pizarrones, internet</li>
-            <li>Papelería, cisternas, pintura antigraffiti, limpieza</li>
-            <li>Sacado de escombro, poda de árboles, remodelación general, seguridad</li>
+            <li><span style="font-weight:bold;">
+                    <a href="https://casualidades.net/Otros_libros.html" target="_blank" rel="noopener"
+                        style="color:blue; text-decoration:underline;">"Léeme y sabrás qué es el VIH/Sida"</a>
+                </span>, está avalado por el <strong>Fondo de Cultura Económica</strong></li>
+            <li>Es un libro de interés general, con un enfoque educativo y preventivo.</li>
+            <li>El libro es de fácil lectura y comprensión, ideal para estudiantes y adultos.</li>
+            <li>Escrito con claridad y sensibilidad para informar, prevenir y crear conciencia.</li>
+            <li>Al compartirlo, ayudas tanto a tu institución como a la comunidad.</li>
+            <li>¡Los libros son cultura!</li>
         </ul>
     </div>
 
     <div class="seccion">
         <h2>Ruta Crítica</h2>
         <p>Pasos a seguir si se acepta la propuesta:</p>
-        <ul>
+        <ol>
             <li><strong>Lectura y análisis del convenio por ambas partes.</strong></li>
             <li><strong>Selección y presentación del personal verificador.</strong></li>
             <li><strong>Decisión del beneficio específico y cálculo de libros necesarios.</strong></li>
             <li><strong>Selección de la institución a apoyar con los $10 de donativo.</strong></li>
             <li><strong>Firma del convenio de colaboración.</strong></li>
             <li><strong>Visita al banco (si aplica según convenio).</strong></li>
-            <li><strong>Evento motivacional en el colegio a cargo de Industrias Contreras.</strong></li>
-            <li><strong>Entrega de libros al personal docente por parte de la empresa.</strong></li>
+            <li><strong>Evento motivacional en el colegio o empresa a cargo de Industrias Contreras.</strong></li>
+            <li><strong>Entrega de libros al personal docente por parte de Industrias Contreras.</strong></li>
             <li><strong>Distribución de libros a los alumnos por parte del colegio.</strong></li>
             <li><strong>Venta de libros durante un máximo de dos semanas.</strong></li>
             <li><strong>Uso de los recursos: retiro o transferencia directa al proveedor del beneficio.</strong></li>
-            <li><strong>Pago de estímulos a alumnos y donación a la causa seleccionada.</strong></li>
+            <li><strong>Pago de estímulos a alumnos o empleados y donación a la causa seleccionada.</strong></li>
             <li><strong>Supervisión y validación final del proyecto.</strong></li>
-        </ul>
+        </ol>
     </div>
 
     <div class="seccion">
-        <h2>Datos Legales</h2>
-        <p><strong>INDUSTRIAS CONTRERAS</strong></p>
-        <p class="negrita">PRODUCTORA, IMPORTADORA, EXPORTADORA, DISTRIBUIDORA, ENVASADORA, FONDEADORA Y
-            COMERCIALIZADORA DE PRODUCTOS, BIENES Y SERVICIOS EN GENERAL.</p>
-        <p><strong>RFC:</strong> COGJ6912245F7</p>
-        <p>Esta empresa opera bajo los principios de legalidad, transparencia y compromiso social. Se recomienda agendar
-            una entrevista para aclarar cualquier duda sobre el proyecto.</p>
+        <h2>¡Ahora es cuando!</h2>
+        <p>Ya hay escuelas, empresas y asociaciones beneficiándose con este modelo solidario.</p>
+        <div style="text-align:center;">
+            <div class="btn" onclick="alert(
+                '📞 Tú eliges:\n' +
+                '     •   WhatsApp o llamada: 55-2148-5031\n\n' +
+                '📞 Oficina:\n' +
+                '     •   llamada: 55-6395-6800\n\n' +
+                '📧 Correo electrónico:\n' +
+                '     •   contacto@industriascontreras.com'
+                )">
+                <strong>¡Contáctanos para agendar cita!</strong>
+            </div>
+        </div>
     </div>
 
     <footer>
-        &copy; 2025 Fondeadora El Fénix · Un proyecto de Industrias Contreras
+        <p style="text-align:center;">&copy; 2025 Fondeadora El Fénix <br> Un proyecto de Industrias Contreras</p>
+        <hr class="border-light" /><br />
+
+        <!-- LOGO MATRIZ INDUSTRIAS CONTRERAS -->
+        <div class="col-md-3 text-center flex-grow-1">
+            <a href="https://industriascontreras.com" rel="noopener">
+                <img src="../../Fotos/Logos/LOGO_MATRIZ.webp" alt="Industrias Contreras"
+                    style="width: 30px; height: 40px" />
+                <p class="m-0 text-white" style="color: white !important; text-align:center;">
+                    Visita la matriz <br /><strong>Industrias Contreras</strong>
+                </p>
+            </a>
+        </div>
     </footer>
+
+    <script>
+        function toggleMenu() {
+            const nav = document.getElementById('navMenu');
+            const hamburger = document.querySelector('.hamburger');
+            nav.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        }
+
+        // Cierra el menú al hacer clic fuera de él
+        document.addEventListener('click', function (event) {
+            const nav = document.getElementById('navMenu');
+            const hamburger = document.querySelector('.hamburger');
+
+            const clickedInsideMenu = nav.contains(event.target);
+            const clickedOnHamburger = hamburger.contains(event.target);
+
+            if (!clickedInsideMenu && !clickedOnHamburger) {
+                nav.classList.remove('active');
+                hamburger.classList.remove('active');
+            }
+        });
+    </script>
 
 </body>
 
