@@ -160,25 +160,47 @@
                 </div>
             </h2>
             <h3>
-                Entra con estas credenciales:
+                <span style="color: green; font-weight: bold; font-size: 1.2em;">
+                    O Entra con estas credenciales:
+                </span>
                 <br><br>
                 Número de afiliado:
-                <button type="button" onclick="copiarTexto('usuario', this)">
-                    <span id="usuario" style="color: green; font-weight: bold; font-size: 1.3em;">Visitantejcg</span> 📋
-                </button><br><br>
+                <span id="usuario" style="color: #000; font-weight: bold; font-size: 1.3em;">Visitantejcg</span>
+                <br><br>
                 Contraseña:
-                <button type="button" onclick="copiarTexto('contrasena', this)">
-                    <span id="contrasena" style="color: green; font-weight: bold; font-size: 1.3em;">Abc123</span> 📋
-                </button>
+                <span id="contrasena" style="color: #000; font-weight: bold; font-size: 1.3em;">Abc123</span>
+                <br><br>
+
+                <!-- Botón principal -->
+                <div style="margin-top: -30px; text-align: center;">
+                    <h3>
+                        <a href="javascript:void(0)" onclick="copiarYEntrar(this)" class="enlace"
+                            style="text-decoration: none; font-size: 1.1em;" rel="noopener noreferrer">
+                            📋 Copia todo y Entra a <p></p>TRAVEL CARD ELITE
+                        </a>
+                    </h3>
+                </div>
+
             </h3>
-            <h3>Ir a</h3>
+            <p style="font-size: 1.6em; color: #555; margin-top: 10px;">
+                Al pegar, verás algo así:</p>
+            <p style="font-size: 1.4em; font-weight: bold;"><mark>Visitantejcg Abc123</mark>
+            </p>
+            <b>Deja el primero donde diga</b> Número de afiliado <br> <b>El segundo muévelo donde diga</b> Contraseña.
+            <br>
+            <u style="color: red;">Borra espacios vacios</u>
+
+            <!-- Mensaje visual -->
+            <span class="mensaje-copiado" id="mensaje-copiado">✅ Copiado</span>
+            <!-- Mensaje visual
+            <h3>O ve directo a:</h3>
             <div style="margin-top: -30px;">
                 <h2><a href="https://www.travelcardelite.com.mx/login.php" target="_blank" class="enlace"
                         rel="noopener noreferrer">
                         TRAVEL CARD ELITE
                     </a>
                 </h2>
-            </div>
+            </div> -->
         </section>
 
     </main>
@@ -230,27 +252,27 @@
         }
     </script>
     <script>
-        function copiarTexto(idElemento, boton) {
-            const texto = document.getElementById(idElemento).innerText;
-            navigator.clipboard.writeText(texto).then(() => {
-                // Crear mensaje flotante
-                const mensaje = document.createElement("span");
-                mensaje.className = "mensaje-copiado";
-                mensaje.textContent = "✅ Copiado";
+        function copiarYEntrar(boton) {
+            const usuario = document.getElementById('usuario').innerText.trim();
+            const contrasena = document.getElementById('contrasena').innerText.trim();
+            const textoCompleto = `${usuario}\n${contrasena}`; // solo valores crudos
 
-                // Insertar después del botón
-                boton.parentNode.insertBefore(mensaje, boton.nextSibling);
+            navigator.clipboard.writeText(textoCompleto).then(() => {
+                // Mostrar mensaje "Copiado"
+                const mensaje = document.getElementById('mensaje-copiado');
+                mensaje.style.display = 'inline-block';
 
-                // Mostrar mensaje
-                mensaje.style.display = "inline-block";
-
-                // Eliminar después de 2 segundos
+                // Después de 2 segundos, ocultar el mensaje y abrir el enlace
                 setTimeout(() => {
-                    mensaje.remove();
+                    mensaje.style.display = 'none';
+                    window.open("https://www.travelcardelite.com.mx/login.php", "_blank");
                 }, 2000);
             });
         }
     </script>
+
+
+
 </body>
 
 </html>
