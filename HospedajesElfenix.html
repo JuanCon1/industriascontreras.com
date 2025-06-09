@@ -142,12 +142,12 @@
         </section>
 
         <section class="section" id="contacto" style="text-align: center;">
-            <h2 style="color: green; font-weight: bold;">
+            <h2 style="color: #000; font-weight: bold;">
                 Contáctanos
                 <!-- Botón: Llamar al número personal -->
                 <div style="margin: 15px 0;">
                     <a href="tel:5521485031"
-                        style="display: inline-block; width: 100%; max-width: 285px; padding: 14px 20px; background-color: #007bff; color: white; text-decoration: none; border-radius: 8px; font-size: 16px; font-weight: bold;">
+                        style="display: inline-block; width: 100%; max-width: 285px; padding: 14px 20px; background-color: #267026; color: white; text-decoration: none; border-radius: 8px; font-size: 16px; font-weight: bold;">
                         📳 Celular: 55-2148-5031
                     </a>
                 </div>
@@ -159,50 +159,27 @@
                     </a>
                 </div>
             </h2>
-            <h3>
-                <span style="color: green; font-weight: bold; font-size: 1.2em;">
-                    O Entra con estas credenciales:
-                </span>
-                <br><br>
-                Número de afiliado:
-                <span id="usuario" style="color: #000; font-weight: bold; font-size: 1.3em;">Visitantejcg</span>
-                <br><br>
-                Contraseña:
-                <span id="contrasena" style="color: #000; font-weight: bold; font-size: 1.3em;">Abc123</span>
-                <br><br>
-
-                <!-- Botón principal -->
-                <div style="margin-top: -30px; text-align: center;">
-                    <h3>
-                        <a href="javascript:void(0)" onclick="copiarYEntrar(this)" class="enlace"
-                            style="text-decoration: none; font-size: 1.1em;" rel="noopener noreferrer">
-                            📋 Copia todo y Entra a <p></p>TRAVEL CARD ELITE
-                        </a>
-                    </h3>
-                </div>
-
+            <span style="background-color: blanchedalmond; color: blue; font-size: 1.2em;"><strong>Lee con
+                    atención</strong></span>
+            <h3 style="color: black; text-align: center;">
+                Memoriza o escribe el <u><b># Afiliado</b></u>: <span
+                    style="color: green; font-weight: bold;"><br><b>1729698219</b></span>
             </h3>
-            <p style="font-size: 1.6em; color: #555; margin-top: 10px;">
-                Al pegar, verás algo así:</p>
-            <p style="font-size: 1.4em; font-weight: bold;"><mark>Visitantejcg Abc123</mark>
-            </p>
-            <b>Deja el 1° donde diga</b> Número de afiliado <br> <b>El 2° muévelo donde diga</b> Contraseña.
-            <br>
-            <u style="color: red;">Borra espacios vacios</u>
-
-            <!-- Mensaje visual -->
-            <span class="mensaje-copiado" id="mensaje-copiado">✅ Copiado</span>
-            <!-- Mensaje visual
-            <h3>O ve directo a:</h3>
-            <div style="margin-top: -30px;">
-                <h2><a href="https://www.travelcardelite.com.mx/login.php" target="_blank" class="enlace"
-                        rel="noopener noreferrer">
-                        TRAVEL CARD ELITE
-                    </a>
-                </h2>
-            </div> -->
+            <span id="contrasena" style="font-weight: bold; position: absolute; left: -9999px;">96JL-=jx</span>
+            <!-- Botón solo para copiar contraseña -->
+            <div style="margin-top: 20px; text-align: center;">
+                <button type="button" onclick="copiarYEntrar()"
+                    style="font-size: 1.2em; padding: 10px 7px; max-width: 330px; background-color: #0074c7; color: white; border: none; border-radius: 5px; cursor: pointer;">
+                    Clic para copiar <b><u><span>contraseña</span></u></b> e ir a
+                    <p></p> <strong>TRAVEL CARD ELITE</strong>
+                </button>
+            </div>
+            <!-- Mensaje visual (opcional) -->
+            <div id="mensaje-copiado"
+                style="display: none; text-align: center; color: #0074c7; font-weight: bold; margin-top: 10px;">
+                ✅ <b><u><span style="color: black;">Contraseña</span></u></b> copiada. <br>Redirigiendo...
+            </div>
         </section>
-
     </main>
 
     <footer>
@@ -251,27 +228,25 @@
             document.getElementById("lightbox").classList.remove("show");
         }
     </script>
+    <!-- Script ir a Travel Card Elite -->
     <script>
-        function copiarYEntrar(boton) {
-            const usuario = document.getElementById('usuario').innerText.trim();
+        function copiarYEntrar() {
             const contrasena = document.getElementById('contrasena').innerText.trim();
-            const textoCompleto = `${usuario}\n${contrasena}`; // solo valores crudos
 
-            navigator.clipboard.writeText(textoCompleto).then(() => {
-                // Mostrar mensaje "Copiado"
+            navigator.clipboard.writeText(contrasena).then(() => {
                 const mensaje = document.getElementById('mensaje-copiado');
-                mensaje.style.display = 'inline-block';
+                mensaje.style.display = 'block';
 
-                // Después de 2 segundos, ocultar el mensaje y abrir el enlace
                 setTimeout(() => {
                     mensaje.style.display = 'none';
                     window.open("https://www.travelcardelite.com.mx/login.php", "_blank");
-                }, 2000);
+                }, 5500);
+            }).catch((error) => {
+                alert("❌ No se pudo copiar la contraseña. Intenta manualmente.");
+                console.error("Error al copiar:", error);
             });
         }
     </script>
-
-
 
 </body>
 
