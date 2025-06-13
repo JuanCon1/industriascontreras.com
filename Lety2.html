@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Invitación - Fiesta de 18 Años</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(to right, #1e1e2f, #3e3e5e);
+            color: white;
+            text-align: center;
+        }
+
+        header {
+            padding: 2rem;
+            background: rgba(0, 0, 0, 0.6);
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin: 0.5rem 0;
+            color: #ffd700;
+            animation: fadeIn 2s ease-in;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin: 0;
+        }
+
+        .carousel {
+            position: relative;
+            max-width: 700px;
+            margin: 2rem auto;
+            overflow: hidden;
+            border-radius: 20px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+        }
+
+        .carousel img {
+            width: 100%;
+            display: none;
+            transition: opacity 1s ease-in-out;
+        }
+
+        .carousel img.active {
+            display: block;
+        }
+
+        .details {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 2rem;
+            margin: 2rem;
+            border-radius: 10px;
+            animation: fadeInUp 2s ease-out;
+        }
+
+        .details h2 {
+            color: #ff69b4;
+            font-size: 2rem;
+        }
+
+        .details p {
+            font-size: 1.1rem;
+        }
+
+        footer {
+            padding: 1rem;
+            font-size: 0.9rem;
+            background: rgba(0, 0, 0, 0.4);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            .details h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>¡Estás Invitado!</h1>
+        <p>A celebrar los 18 años de <strong>Edwing</strong></p>
+    </header>
+
+    <div class="carousel">
+        <img src="Fotos/FTeatro/1.webp" alt="Fiesta" class="active">
+        <img src="Fotos/FTeatro/2.webp" alt="Diversión">
+        <img src="Fotos/FTeatro/3.webp" alt="Cumpleaños">
+    </div>
+
+    <section class="details">
+        <h2>🎂 Fiesta de Edwing</h2>
+        <p><strong>Fecha:</strong> Sábado 22 de junio de 2025</p>
+        <p><strong>Hora:</strong> 7:00 PM</p>
+        <p><strong>Lugar:</strong> Salón Jardines del Sol, Av. Fiesta #123, CDMX</p>
+        <p>Ven con tus mejores galas y muchas ganas de bailar 💃🕺</p>
+        <p>¡Habrá música en vivo, cena, pastel y mucha diversión!</p>
+    </section>
+
+    <footer>
+        Confirma tu asistencia con Tía Marta: 55 1234 5678
+    </footer>
+
+    <script>
+        let current = 0;
+        const images = document.querySelectorAll('.carousel img');
+
+        setInterval(() => {
+            images[current].classList.remove('active');
+            current = (current + 1) % images.length;
+            images[current].classList.add('active');
+        }, 3000);
+    </script>
+
+</body>
+
+</html>

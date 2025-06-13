@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="es" data-bs-theme="auto">
+
+<head>
+    <script src="js/color-modes.js"></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Juan Contreras actor">
+    <meta name="keywords"
+        content="Teatro, Teatro Viajero El Fénix, Industrias Contreras, espectáculos, familia, arte, cultura, creatividad, diversión, presentación, obras, eventos, Funciones, Puestas en escena">
+    <meta name="generator" content="">
+    <!-- Descripción para motores de búsqueda -->
+    <meta name="description" content="Teatro Viajero El Fénix es una filial de Industrias Contreras
+    que ofrece espectáculos de calidad para toda la familia. ¡Descubre nuestras obras y eventos!" />
+    <title>Teatro Viajero El Fénix</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="Fotos/Iconos/TEATRO_ICO.ico" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <style>
+        header {
+            background: linear-gradient(to right, #FFD700, #1E90FF) !important;
+            color: white !important;
+            padding: 0.7rem 0.3rem !important;
+            text-align: center !important;
+            position: relative !important;
+        }
+
+        .btn-bd-primary {
+            --bd-violet-bg: #712cf9;
+            --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+            --bs-btn-font-weight: 600;
+            --bs-btn-color: var(--bs-white);
+            --bs-btn-bg: var(--bd-violet-bg);
+            --bs-btn-border-color: var(--bd-violet-bg);
+            --bs-btn-hover-color: var(--bs-white);
+            --bs-btn-hover-bg: #6528e0;
+            --bs-btn-hover-border-color: #6528e0;
+            --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+            --bs-btn-active-color: var(--bs-btn-hover-color);
+            --bs-btn-active-bg: #5a23c8;
+            --bs-btn-active-border-color: #5a23c8;
+        }
+
+        .bd-mode-toggle {
+            z-index: 1500;
+        }
+
+        .bd-mode-toggle .dropdown-menu .active .bi {
+            display: block !important;
+        }
+
+        .obras-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            max-width: 600px;
+            margin: auto;
+        }
+
+        .obra-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #f8f9fa;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .obra-link {
+            text-decoration: underline;
+            font-size: 18px;
+            font-weight: bold;
+            color: #0056b3;
+            transition: color 0.3s;
+        }
+
+        .obra-link:hover {
+            color: #003366;
+        }
+
+        .btn-descargar {
+            padding: 8px 15px;
+            font-size: 14px;
+            color: white;
+            background-color: #ff6600;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+
+        .btn-descargar:hover {
+            background-color: #cc5500;
+        }
+    </style>
+</head>
+
+<body style="padding: 0px 5px 5px 5px !important;">
+    <!-- SÍMBOLO SOL -->
+    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+        <symbol id="check2" viewBox="0 0 16 16">
+            <path
+                d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
+        </symbol>
+        <symbol id="circle-half" viewBox="0 0 16 16">
+            <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z" />
+        </symbol>
+        <!-- SÍMBOLO LUNA -->
+        <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+            <path
+                d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z" />
+            <path
+                d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z" />
+        </symbol>
+        <!-- SÍMBOLO AUTOMÁTICO -->
+        <symbol id="sun-fill" viewBox="0 0 16 16">
+            <path
+                d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z" />
+        </symbol>
+    </svg>
+    <!-- BOTÓN PARA TEMA BLANCO O NEGRO -->
+    <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
+        <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button"
+            aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (auto)">
+            <svg class="bi my-1 theme-icon-active" width="1em" height="1em">
+                <use href="#circle-half"></use>
+            </svg>
+            <span class="visually-hidden" id="bd-theme-text">CAMBIAR TEMA</span>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
+            <li>
+                <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light"
+                    aria-pressed="false">
+                    <svg class="bi me-2 opacity-50" width="1em" height="1em">
+                        <use href="#sun-fill"></use>
+                    </svg>
+                    Luz
+                    <svg class="bi ms-auto d-none" width="1em" height="1em">
+                        <use href="#check2"></use>
+                    </svg>
+                </button>
+            </li>
+            <li>
+                <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark"
+                    aria-pressed="false">
+                    <svg class="bi me-2 opacity-50" width="1em" height="1em">
+                        <use href="#moon-stars-fill"></use>
+                    </svg>
+                    Oscuro
+                    <svg class="bi ms-auto d-none" width="1em" height="1em">
+                        <use href="#check2"></use>
+                    </svg>
+                </button>
+            </li>
+            <li>
+                <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto"
+                    aria-pressed="true">
+                    <svg class="bi me-2 opacity-50" width="1em" height="1em">
+                        <use href="#circle-half"></use>
+                    </svg>
+                    Auto
+                    <svg class="bi ms-auto d-none" width="1em" height="1em">
+                        <use href="#check2"></use>
+                    </svg>
+                </button>
+            </li>
+        </ul>
+    </div>
+
+    <!-- CABECERA fixed-top -->
+    <nav class="navbar navbar-expand-md" style="background: linear-gradient(to right, #FFD700, #1E90FF) !important;">
+        <div class="container-fluid">
+            <div class="navbar-brand w-100 text-center d-flex justify-content-center align-items-center"
+                style="color: white; font-weight: bold;">
+                <img src="Lety/Pastel.jpeg" alt="Logo Teatro Viajero El Fénix" style="max-width: 15%; height: auto;">
+                <span class="mx-2">
+                    <span style="color: #FFD700; background: #1E90FF; padding: 2px 8px; border-radius: 6px;">¡ESTÁS
+                        INVITADO!</span> <br>
+                    <span style="color: #000;">A celebrar los 18 años de<br></span>
+                    <span style="color: #FFD700; background: #1E90FF; padding: 2px 8px; border-radius: 6px;">EDWING
+                        YAMIL</span>
+                </span>
+                <img src="Lety/Regalo.jpeg" alt="Logo Teatro Viajero El Fénix" style="max-width: 15%; height: auto;">
+            </div>
+        </div>
+    </nav>
+    <!-- H1 TRANSPARENTE -->
+    <main class="container"
+        style="background-image: url('Lety/Edwing001.jpg'); background-size: cover; background-position: top center; background-attachment: fixed; padding: 80px 0 0 0; min-height: 1050px; display: flex; align-items: center; justify-content: center;">
+        <div class="p-3 rounded"
+            style="color: white; background: rgba(0, 0, 0, 0.5); text-align: center; max-width: 120%; transform: translateY(170px);">
+            <!-- <h1 class="fs-3">EDWING YAMIL</h1> -->
+            <p class="lead"><strong>Gloria a Dios y <br>Bendiciones en tu vida <br>Edwing Yamil Montoya Monroy
+                </strong></p>
+        </div>
+    </main>
+    <!-- FOTO FIJA AL FONDO -->
+    <main class="container"
+        style="background-image: url('Lety/Edwing002.jpg'); background-size: contain; background-repeat: no-repeat; background-position: center center; background-attachment: fixed; padding: 30px 0; height: 470px; display: flex; align-items: center; justify-content: center;">
+    </main>
+    <br>
+    <!-- H2 INFO -->
+    <main class="container" style="text-align: center; padding: 0;">
+        <section>
+            <h5>
+                <p>Edwing amado hijo mío. <br>Te amo desde antes que nacieras. <br> Que la vida te regale triunfos y
+                    éxitos
+                    tan grandes como tu corazón💖;
+                    mi amor por ti es eterno, más fuerte que el tiempo y más profundo que el universo.😘
+                </p>
+            </h5>
+        </section>
+    </main>
+    <main class="container" style="text-align: center;">
+        <!-- LOGO TEATRO ok -->
+        <img src="Lety/Edwing003.jpg" alt="Logo Teatro Viajero El Fénix" style="max-width: 30%; height: auto;"><br><br>
+        <!-- INICIA CARRUSEL DE IMÁGENES -->
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators" id="carousel-indicators"></div>
+            <div class="carousel-inner" id="carousel-inner"></div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div><br>
+        <!-- TERMINA CARRUSEL DE IMÁGENES -->
+        <!-- video directo
+        <div class="video-responsive" style="width: 100%; max-width: 600px; margin: 1.5rem auto; margin-top: -10px">
+            <iframe
+                title="LissCreativa. “Testimonios de Un boleto al cielo”. [Vídeo] YouTube. https://www.youtube.com/watch?v=AirTQ4PftFc"
+                src="https://www.youtube.com/embed/AirTQ4PftFc?rel=0&amp;wmode=transparent" frameborder="0"
+                allowfullscreen style="width: 100%; aspect-ratio: 16/9; min-height: 170px;">
+            </iframe>
+        </div> -->
+        <!-- PIE ESPECIAL -->
+        <h4
+            style="font-weight: bold; background-color: blue; padding: 5px; color: white; text-align: center; margin-top: -15px">
+            RECEPCIÓN <br>
+            <small>Salón Premier<br>Naucalpan</small>
+        </h4>
+        <h4 style="background-color: yellow; color: black; font-weight: bold;">
+            <small>Calle Amado Nervo # 17
+                Colonia poetas Mexiquenses
+                Naucalpan. Estado de México
+                C.P. 53687 <br>
+                A espaldas del mercado de Izcalli Chamapa.</small>
+        </h4>
+        <!-- PIE ESPECIAL -->
+        <h4
+            style="font-weight: bold; background-color: blue;; padding: 5px; color: white; text-align: center; margin-top: 15px">
+            FECHA <br>
+            <small>Sábado 15 de noviembre de 2025 <br>2:00 PM A 10:00 PM</small>
+        </h4><br>
+        <!-- LISTA DE OBRAS Y SU MODAL -->
+        <div class="obras-container" style="text-align: center; align-items: center;">
+            <!-- VÍA GOOGLE MAPS -->
+            <div class="obra-item" style="justify-content: center;">
+                <a class="nav-item nav-link text-primary obra-link"
+                    href="https://www.google.com/maps/search/?api=1&query=Calle+Amado+Nervo+17,+Colonia+Poetas+Mexiquenses,+Naucalpan,+Estado+de+México"
+                    target="_blank" style="margin: 0 auto;">
+                    <b>CÓMO LLEGAR VÍA MAPS</b>
+                </a>
+            </div>
+            <!-- VÍA WAZE -->
+            <div class="obra-item" style="justify-content: center;">
+                <a class="nav-item nav-link text-primary obra-link"
+                    href="https://waze.com/ul?q=Calle+Amado+Nervo+17,+Colonia+Poetas+Mexiquenses,+Naucalpan,+Estado+de+México"
+                    target="_blank" style="margin: 0 auto;">
+                    <b>CÓMO LLEGAR VÍA WAZE</b>
+                </a>
+            </div>
+        </div>
+        <br>
+
+        <!-- CONTRATACIONES -->
+        <div style="text-align: center;">
+            <h2 style="color: red;"><strong>FAVOR <br>CONFIRMAR ASISTENCIA</strong></h2>
+            <!-- Botón: Llamar al número personal
+            <div style="margin: 15px 0;">
+                <a href="tel:5551880910"
+                    style="display: inline-block; width: 100%; max-width: 310px; padding: 14px 20px; background-color: #007bff; color: white; text-decoration: none; border-radius: 8px; font-size: 16px; font-weight: bold;">
+                    📳 Celular: 55-2148-5031
+                </a>
+            </div> -->
+            <!-- Botón: Enviar mensaje por WhatsApp -->
+            <a href="https://wa.me/525551880910" target="_blank" rel="noopener"
+                style="display: inline-flex; align-items: center; justify-content: center; width: 100%; max-width: 310px; padding: 14px 20px; background-color: #005C4B; color: white; text-decoration: none; border-radius: 8px; font-size: 16px; font-weight: bold;">
+                <!-- Ícono SVG de WhatsApp -->
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"
+                    style="height: 20px; margin-right: 10px; fill: white;">
+                    <path
+                        d="M16 .4C7.4.4.4 7.4.4 16c0 2.9.8 5.7 2.4 8.1L.4 31.6l7.8-2c2.3 1.3 5 2 7.8 2 8.6 0 15.6-7 15.6-15.6S24.6.4 16 .4z" />
+                    <path fill="#25D366"
+                        d="M24 21.6c-.4 1.1-2.2 2-3 2.1-.8.1-1.8.1-3-.3-3.1-1-5.4-3.5-6.3-4.6-.9-1.2-2.1-3.2-2.3-4.5-.2-1.3-.2-2.3 0-2.7.4-1 1.1-1.5 1.6-1.6.4-.1.8-.1 1.1 0 .3.1.7.6.8 1.1.3 1 .6 2 1.2 2.6.3.3.3.3.2.6-.1.3-.2.4-.3.5-.2.2-.3.3-.5.5-.2.2-.3.3-.1.6.2.3 1.2 2.1 3 3.1 1.8 1 2.2.9 2.6.8.3-.1 1.1-.5 1.3-.9.2-.4.6-.4.9-.2.3.1 1.6.8 1.9 1 .3.2.5.3.5.5s0 1.3-.4 2.2z" />
+                </svg>
+                Mensaje de WhatsApp
+            </a>
+        </div>
+    </main>
+    <hr class="border-light">
+
+    <!-- ENLACE A BOOSTRAP .JS -->
+    <script src="js/bootstrap.bundle.js"></script>
+
+    <!-- SCRIPT PARA EL MODAL -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Obtener todos los enlaces con clase obra-link
+            const obraLinks = document.querySelectorAll(".obra-link");
+            const obraImagen = document.getElementById("obraImagen");
+
+            obraLinks.forEach(link => {
+                link.addEventListener("click", function () {
+                    // Verificar que el modal tenga la imagen antes de cambiar el src
+                    if (obraImagen) {
+                        obraImagen.src = this.getAttribute("data-img");
+                    }
+                });
+            });
+        });
+    </script>
+
+    <!-- SCRIPTS CARRUSEL -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let indicators = "";
+            let images = "";
+
+            for (let i = 0; i < 23; i++) {
+                indicators += `<button type="button" data-bs-target="#carouselExample" data-bs-slide-to="${i}"
+                ${i === 0 ? 'class="active" aria-current="true"' : ''} aria-label="Slide ${i + 1}"></button>`;
+            }
+
+            for (let i = 1; i <= 23; i++) {
+                images += `
+                    <div class="carousel-item ${i === 1 ? 'active' : ''}" data-bs-interval="2000">
+                        <img src="Lety/Carrusel/${i}.jpg" class="d-block w-100" alt="Imagen ${i}">
+                    </div>
+                `;
+            }
+
+            document.getElementById("carousel-indicators").innerHTML = indicators;
+            document.getElementById("carousel-inner").innerHTML = images;
+        });
+
+    </script>
+
+</body>
+
+</html>
