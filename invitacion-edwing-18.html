@@ -202,6 +202,36 @@
         style="background-image: url('Lety/Edwing002.jpg'); background-size: contain; background-repeat: no-repeat; background-position: center center; background-attachment: fixed; padding: 30px 0; height: 470px; display: flex; align-items: center; justify-content: center;">
     </main>
     <br>
+    <!-- 🎵 Audio -->
+    <audio id="musica" src="Lety/amortriste.mp3"></audio>
+
+    <!-- 🎛️ Controles -->
+    <div class="audio-controles">
+        <button id="btn-audio" onclick="toggleAudio()">🔊 Reproducir música</button>
+    </div>
+    <style>
+        .audio-controles {
+            margin: 2rem auto;
+            text-align: center;
+        }
+
+        #btn-audio {
+            background: linear-gradient(to right, #FFD700, #1E90FF);
+            border: none;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            font-size: 1rem;
+            font-weight: bold;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: background 0.3s ease, transform 0.2s ease;
+        }
+
+        #btn-audio:hover {
+            transform: scale(1.05);
+            background: linear-gradient(to right, #1E90FF, #FFD700);
+        }
+    </style>
     <!-- H2 INFO -->
     <main class="container" style="text-align: center; padding: 0;">
         <section>
@@ -306,7 +336,21 @@
         </div>
     </main>
     <hr class="border-light">
+<!-- Música de fondo -->
+    <script>
+        const audio = document.getElementById("musica");
+        const btnAudio = document.getElementById("btn-audio");
 
+        function toggleAudio() {
+            if (audio.paused) {
+                audio.play();
+                btnAudio.textContent = "⏸️ Pausar música";
+            } else {
+                audio.pause();
+                btnAudio.textContent = "🔊 Reproducir música";
+            }
+        }
+    </script>
     <!-- ENLACE A BOOSTRAP .JS -->
     <script src="js/bootstrap.bundle.js"></script>
 
