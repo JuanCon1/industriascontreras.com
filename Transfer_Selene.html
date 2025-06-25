@@ -16,6 +16,23 @@
   <link href="css/bootstrap.css" rel="stylesheet">
 
   <style>
+    /* Normaliza el modelo de caja para todo */
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+    /* Previene scroll lateral global */
+    html,
+    body {
+      width: 100%;
+      max-width: 100%;
+      overflow-x: hidden;
+      margin: 0;
+      padding: 0;
+    }
+
     header {
       background: linear-gradient(to right, #FFD700, #1E90FF);
       color: white;
@@ -102,7 +119,7 @@
 </head>
 
 <body class="d-flex h-100 text-center ">
-  <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+  <div class="cover-container d-flex w-100 h-100 p-1 mx-auto flex-column">
 
     <header class="mb-auto">
       <div class="d-flex align-items-center justify-content-center justify-content-md-start">
@@ -115,8 +132,9 @@
 
     <main class="px-3">
       <article class="blog-post">
-        <p><br>Si tienes cintas de video en formatos antiguos como <strong>Betamax, VHS, VHS-C, DVD, CD o Cintas de audio
-          casetera</strong>, podemos
+        <p><br>Si tienes cintas de video en formatos antiguos como <strong>Betamax, VHS, VHS-C, DVD, CD o Cintas de
+            audio
+            casetera</strong>, podemos
           convertirlas
           a un formato digital moderno para que puedas disfrutar de tus recuerdos.
         </p>
