@@ -53,10 +53,9 @@
                 margin: 1.5rem auto;
                 margin-top: 10px;
                 ">
-                <iframe
-                    title="LissCreativa. “Comparativa de
-                plataformas”. [Vídeo] YouTube. https://www.youtube.com/watch?v=rKUu0yDnmMU"
-                    src="https://www.youtube.com/embed/rKUu0yDnmMU?rel=0&amp;wmode=transparent" frameborder="0"
+                <iframe title="LissCreativa. “Comparativa de
+                plataformas”. [Vídeo] YouTube. https://www.youtube.com/watch?v=SBwtFCMeWV4"
+                    src="https://www.youtube.com/embed/SBwtFCMeWV4?rel=0&amp;wmode=transparent" frameborder="0"
                     allowfullscreen style="width: 100%; aspect-ratio: 16/9; min-height: 170px">
                 </iframe>
             </div>
@@ -144,7 +143,7 @@
 
         <section class="section" id="contacto" style="text-align: center;">
             <h2 style="color: #000; font-weight: bold;">
-                Contáctanos
+                ¡¿Dudas?! ¡Márcanos! <br>
                 <!-- Botón: Llamar al número personal -->
                 <div style="margin: 15px 0;">
                     <a href="tel:5521485031"
@@ -164,21 +163,18 @@
                     atención</strong></span>
             <h3 style="color: black; text-align: center;">
                 Memoriza o escribe el <u><b># Afiliado</b></u>: <span
-                    style="color: green; font-weight: bold;"><br><b>1729698219</b></span>
+                    style="color: green; font-weight: bold;"><br><b>1751299891</b></span>
             </h3>
-            <span id="contrasena" style="font-weight: bold; position: absolute; left: -9999px;">96JL-=jx</span>
-            <!-- Botón solo para copiar contraseña -->
+            <!-- Contraseña oculta -->
+            <span id="contrasena" style="font-weight: bold; position: absolute; left: -9999px;">72DU=-wm</span>
+
+            <!-- Botón para copiar contraseña e ir a TRAVEL CARD ELITE -->
             <div style="margin-top: 20px; text-align: center;">
                 <button type="button" onclick="copiarYEntrar()"
                     style="font-size: 1.2em; padding: 10px 7px; max-width: 330px; background-color: #0074c7; color: white; border: none; border-radius: 5px; cursor: pointer;">
-                    Clic para copiar <b><u><span>contraseña</span></u></b> e ir a
-                    <p></p> <strong>TRAVEL CARD ELITE</strong>
+                    Clic para copiar <b><u><span>contraseña</span></u></b> e ir a<br><br><strong>TRAVEL CARD
+                        ELITE</strong>
                 </button>
-            </div>
-            <!-- Mensaje visual (opcional) -->
-            <div id="mensaje-copiado"
-                style="display: none; text-align: center; color: #0074c7; font-weight: bold; margin-top: 10px;">
-                ✅ <b><u><span style="color: black;">Contraseña</span></u></b> copiada. <br>Redirigiendo...
             </div>
         </section>
     </main>
@@ -232,19 +228,13 @@
     <!-- Script ir a Travel Card Elite -->
     <script>
         function copiarYEntrar() {
-            const contrasena = document.getElementById('contrasena').innerText.trim();
+            const texto = document.getElementById("contrasena").textContent;
 
-            navigator.clipboard.writeText(contrasena).then(() => {
-                const mensaje = document.getElementById('mensaje-copiado');
-                mensaje.style.display = 'block';
-
-                setTimeout(() => {
-                    mensaje.style.display = 'none';
-                    window.open("https://www.travelcardelite.com.mx/login.php", "_blank");
-                }, 5500);
-            }).catch((error) => {
-                alert("❌ No se pudo copiar la contraseña. Intenta manualmente.");
-                console.error("Error al copiar:", error);
+            navigator.clipboard.writeText(texto).then(() => {
+                // Ir a la página inmediatamente (acción directa del usuario)
+                window.open("https://www.travelcardelite.com.mx/login.php", "_blank");
+            }).catch(() => {
+                alert("❌ No se pudo copiar la contraseña. Revisa los permisos de tu navegador.");
             });
         }
     </script>
