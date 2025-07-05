@@ -240,7 +240,15 @@ body {
 
 /* SOFTWIC - Verde */
 .card.softwic {
-  background-color: #2ecc71;
+  background: linear-gradient(
+    to right,
+    /* Negro */ #000000 3%,
+    /* Amarillo */ #ffd700 20%,
+    /* Azul */ #1e90ff 40%,
+    /* Verde */ #00ff00 60%,
+    /* Rojo */ #ff0000 95%
+    /* Blanco #ffffff 100% */
+  );
 }
 
 .card.softwic a {
@@ -312,7 +320,7 @@ body {
 
 /* transfer SELENE - Morado */
 .card.transfer-selene {
-  background-color: #9b59b6;
+  background: linear-gradient(to right, #ffd700, #1e90ff);
 }
 
 .card.transfer-selene a {
@@ -338,13 +346,15 @@ body {
 
 /* CUTANE TAU - Crema */
 .card.cutane-tau {
-  background-color: #f5e0d7;
+  background: linear-gradient(to top, #c8a2de, #81ecec, #257aea);
   color: #2c3e50;
 }
 
-.card.cutane-tau h3,
 .card.cutane-tau p {
   color: #000;
+}
+.card.cutane-tau h3 {
+  color: red;
 }
 
 .card.cutane-tau a {
