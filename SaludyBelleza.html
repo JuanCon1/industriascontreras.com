@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Salud y Belleza</title>
+  <!-- Favicon-->
+  <link rel="icon" type="image/x-icon" href="Fotos/Iconos/SALUDYBELLEZA.ico" />
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      text-align: center;
+      padding: 20px;
+    }
+
+    .intro {
+      font-size: 14px;
+      color: white;
+    }
+
+    .container {
+      display: flex;
+      padding: 15px;
+    }
+
+    .sidebar {
+      width: 20%;
+      padding-left: 10px;
+      border-left: 1px solid #444;
+    }
+
+    .sidebar img {
+      width: 100%;
+      margin-bottom: 10px;
+      cursor: pointer;
+      border: 2px solid transparent;
+    }
+
+    .sidebar img:hover {
+      border-color: #ffcc00;
+    }
+
+    .sidebar-title {
+      display: block;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 10px;
+      font-size: 1.1rem;
+      color: #ffcc00;
+      /* tamaño base para pantallas medianas/grandes */
+    }
+
+    /* Tamaño para pantallas pequeñas (celulares) */
+    @media (max-width: 600px) {
+      .sidebar-title {
+        font-size: 0.5rem;
+      }
+    }
+
+    .content {
+      width: 80%;
+      padding-right: 20px;
+    }
+
+    .product {
+      background-color: #111;
+      border: 1px solid #444;
+      border-radius: 8px;
+      padding: 15px;
+      margin-bottom: 20px;
+      display: none;
+    }
+
+    .product.active {
+      display: block;
+    }
+
+    .product img {
+      width: 200px;
+      border-radius: 5px;
+      display: block;
+      margin: 0 auto;
+    }
+
+    h1 {
+      margin-bottom: -10px;
+    }
+
+    .product h2 {
+      margin: 5px 0;
+      text-align: center;
+      margin-top: -10px;
+    }
+
+    .product h3 {
+      margin: 5px 0;
+      text-align: center;
+    }
+
+    .product p {
+      font-size: 16px;
+      color: white;
+      text-align: justify;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 12px;
+      padding: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <header style="margin-top: -25px;">
+    <h1>SALUD Y BELLEZA</h1>
+    <p class="intro">Productos naturales para tu bienestar</p>
+  </header>
+
+  <div class="container" style="margin-top: -30px;">
+    <div class="content">
+      <!-- REUMATOL -->
+      <div id="reumatol" class="product active">
+        <h2><strong style="color:#007BFF;">REUMATOL</strong></h2>
+        <img src="Fotos/SaludyBelleza/REUMATOL.webp" alt="REUMATOL">
+        <p>
+          <span style="background-color:#00b6fa; color:white;"><strong>INDUSTRIAS</strong></span>
+          <span style="background-color:#cc0000; color:white;"><strong>CONTRERAS</strong></span>
+          pone en sus manos el <strong style="color:#007BFF;">GEL REUMATOL</strong>, un producto de <strong>venta
+            libre</strong> porque sus
+          ingredientes así lo son.
+        </p>
+        <p>
+          <strong style="color:#007BFF;">EFICAZ PARA:</strong> toda clase de <strong>dolores
+            musculares</strong>, ya
+          que es un analgésico y desinflamatorio tópico. Contiene <strong>mentol, alcanfor y salicilato de
+            metilo</strong>, entre otros ingredientes. Este último es uno de los más potentes desinflamatorios y
+          analgésicos musculares que existen.
+        </p>
+        <p>
+          <strong style="color:#007BFF;">ÚTIL EN:</strong> golpes, golpes contusos, calambres,
+          distensiones y esguinces
+          grado 1. Además, necesario ante todo <strong>dolor muscular, artrítico, reumático, lumbar, nefrítico</strong>,
+          así como en: piernas, brazos, rodillas, manos, codos, espalda y articulaciones. También se usa cuando hay
+          frialdad, e igualmente para lesiones por accidentes en casa, trabajo, colegio y deporte.
+        </p>
+        <p>
+          <strong style="color:#007BFF;">VENTAJAS:</strong> no mancha la ropa, tampoco deja
+          pegajosa ni grasosa la
+          piel. Tiene cuerpo, un olor agradable, y las sustancias con las que está elaborado brindan <strong>mejoría,
+            confort y seguridad</strong>.
+        </p>
+        <p>
+          <strong style="color:#007BFF;">DIFERENCIA ENTRE ARTRITIS Y REUMATISMO:</strong>
+          aunque parecen sinónimos, no
+          lo son. La <strong>artritis</strong> es una enfermedad de las articulaciones, mientras que el
+          <strong>reumatismo</strong> se refiere a todas las dolencias que afectan a los músculos, tendones y
+          articulaciones.
+        </p>
+        <p>
+          <strong style="color:#007BFF;">MODO DE EMPLEO:</strong> si lo prefiere, báñese
+          primero. Aplique a criterio
+          <strong style="color:#007BFF;">REUMATOL</strong> en la región a usar, y aunque sí se puede mojar, es mejor no
+          hacerlo durante las
+          próximas 12 horas. Use un calcetín limpio o una venda no tan apretada.
+        </p>
+        <p>
+          <strong style="color:#007BFF;">PEDIDOS:</strong><br>
+        </p>
+        <div style="text-align:center;">
+          <!-- Botón: Correo electrónico -->
+          <div style=" margin: 0px 0;">
+            <a href="mailto:ventas@industriascontreras.com"
+              style="display: inline-block; width: 100%; max-width: 310px; padding: 10px 3px; background-color: #ff8800; color: white; text-decoration: none; border-radius: 8px; font-size: 14px; font-weight: bold;">📨
+              ventas@industriascontreras.com
+            </a>
+          </div>
+          <!-- Botón: Llamar al número personal -->
+          <div style="margin: 15px 0;">
+            <a href="tel:5521485031"
+              style="display: inline-block; width: 100%; max-width: 310px; padding: 10px 3px; background-color:#007bff; color: white; text-decoration: none; border-radius: 8px; font-size: 16px; font-weight: bold;">
+              📳 Celular: 55-2148-5031
+            </a>
+          </div>
+          <!-- Botón: Llamar a oficina -->
+          <div style="margin: 15px 0;">
+            <a href="tel:5563956800"
+              style="display: inline-block; width: 100%; max-width: 310px; padding: 10px 3px; background-color:#8E44AD; color: white; text-decoration: none; border-radius: 8px; font-size: 16px; font-weight: bold;">
+              ☎️ Oficina: 55-6395-6800
+            </a>
+          </div>
+          <!-- Botón: Enviar mensaje por WhatsApp -->
+          <a href="https://wa.me/525521485031" target="_blank" rel="noopener"
+            style="display: inline-block; width: 100%; max-width: 310px; padding: 10px 3px; background-color: #005C4B; color: white; text-decoration: none; border-radius: 8px; font-size: 16px; font-weight: bold;">
+            <!-- Ícono SVG de WhatsApp -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"
+              style="height: 20px; margin-right: 10px; fill: white;">
+              <path
+                d="M16 .4C7.4.4.4 7.4.4 16c0 2.9.8 5.7 2.4 8.1L.4 31.6l7.8-2c2.3 1.3 5 2 7.8 2 8.6 0 15.6-7 15.6-15.6S24.6.4 16 .4z" />
+              <path fill="#25D366"
+                d="M24 21.6c-.4 1.1-2.2 2-3 2.1-.8.1-1.8.1-3-.3-3.1-1-5.4-3.5-6.3-4.6-.9-1.2-2.1-3.2-2.3-4.5-.2-1.3-.2-2.3 0-2.7.4-1 1.1-1.5 1.6-1.6.4-.1.8-.1 1.1 0 .3.1.7.6.8 1.1.3 1 .6 2 1.2 2.6.3.3.3.3.2.6-.1.3-.2.4-.3.5-.2.2-.3.3-.5.5-.2.2-.3.3-.1.6.2.3 1.2 2.1 3 3.1 1.8 1 2.2.9 2.6.8.3-.1 1.1-.5 1.3-.9.2-.4.6-.4.9-.2.3.1 1.6.8 1.9 1 .3.2.5.3.5.5s0 1.3-.4 2.2z" />
+            </svg>
+            Mensaje por WhatsApp
+          </a>
+        </div>
+        <br>
+        <p>
+          <strong style="color:#00ffff;">ENVIAMOS A TODO EL PAÍS.</strong><br>
+          <strong style="color:#ffff00;">Precio:</strong> $65 pesos, más envío en la República Mexicana. <br>
+          <strong style="color:#00ff00;">¡Envío gratis en la Ciudad de México cuando su compra sea mayor a cinco
+            piezas!</strong>
+        </p>
+        <p>
+          <strong style="color:#ff9999;">Precio especial a mayoristas:</strong> comuníquese con nosotros.
+        </p>
+        <p>
+          <strong style="color:#ffff00;">Nota:</strong> si adquirió el producto en promoción especial de camión, le
+          respetaremos ese mismo precio.
+        </p>
+      </div>
+      <!-- DERMATOL -->
+      <div id="dermatol" class="product">
+        <h2 style="color:#ff0000;">DERMATOL</h2>
+        <img src="Fotos/SaludyBelleza/DERMATOL.webp" alt="DERMATOL">
+        <p>
+          <span style="background-color:#00b6fa; color:white;"><strong>INDUSTRIAS</strong></span>
+          <span style="background-color:#cc0000; color:white;"><strong>CONTRERAS</strong></span> pone en sus manos
+          <strong>DERMATOL</strong>, la crema de <strong>concha nácar con tepezcohuite 100% original</strong>.
+        </p>
+        <p>
+          Fabricada en invernadero, lo que garantiza que sea una crema limpia. El tepezcohuite, proveniente de
+          Chiapas, es micropulverizado de manera totalmente higiénica por expertos que lavan perfectamente la corteza
+          del árbol.
+        </p><br>
+        <p>
+          <strong style="background-color:#cc0000; color:white;">LA CONCHA NÁCAR:</strong> hidrata y desmancha.
+        </p>
+        <p><strong style="background-color:#cc0000; color:white;">EL TEPEZCOHUITE:</strong> regenera.<br>
+        </p>
+        <p><strong style="background-color:#cc0000; color:white;">JUNTOS:</strong> exfolian<br>
+        </p><br>
+        <p>
+          <strong style="background-color:#cc0000; color:white;">HIDRATADORA:</strong> al hidratar la piel, permite una
+          limpieza más profunda
+          de los poros cuando se usa agua y jabón. Además, cuando la grasa innecesaria brota (principalmente por la
+          noche), encuentra una piel más limpia, reduciendo la acumulación de microbios y bacterias. Resultado: menos
+          infección y menor aparición de barros.
+        </p>
+        <p>
+          <strong style="background-color:#cc0000; color:white;">DESMANCHADORA:</strong> ayuda a recuperar el tono
+          original de la piel. Es
+          reconocida por su efectividad contra el paño y manchas <strong>rojas, negras, cafés y blancas</strong>.
+        </p>
+        <p>
+          <strong style="background-color:#cc0000; color:white;">REGENERADORA:</strong> el tepezcohuite es el mejor
+          regenerador natural del
+          mundo, reconocido internacionalmente por asociaciones de apoyo a niños con quemaduras. Incluso el Gobierno
+          Mexicano lo ha utilizado en tratamientos para quemaduras graves.
+        </p>
+        <p>
+          <strong style="background-color:#cc0000; color:white;">EXFOLIADORA:</strong> elimina células muertas y
+          favorece el trabajo de las
+          nuevas células oxigenadas.
+        </p>
+        <p><strong style="background-color:#cc0000; color:white;">USO:</strong> exclusivamente
+          <strong>nocturno</strong>.
+        </p><br>
+        <p>
+          <strong style="background-color:#cc0000; color:white;">PEDIDOS:</strong>
+        </p>
+        <div style="text-align:center;">
+          <!-- Botón: Correo electrónico -->
+          <div style=" margin: 0px 0;">
+            <a href="mailto:ventas@industriascontreras.com"
+              style="display: inline-block; width: 100%; max-width: 310px; padding: 10px 3px; background-color: #ff8800; color: white; text-decoration: none; border-radius: 8px; font-size: 14px; font-weight: bold;">📨
+              ventas@industriascontreras.com
+            </a>
+          </div>
+          <!-- Botón: Llamar al número personal -->
+          <div style="margin: 15px 0;">
+            <a href="tel:5521485031"
+              style="display: inline-block; width: 100%; max-width: 310px; padding: 10px 3px; background-color:#007bff; color: white; text-decoration: none; border-radius: 8px; font-size: 16px; font-weight: bold;">
+              📳 Celular: 55-2148-5031
+            </a>
+          </div>
+          <!-- Botón: Llamar a oficina -->
+          <div style="margin: 15px 0;">
+            <a href="tel:5563956800"
+              style="display: inline-block; width: 100%; max-width: 310px; padding: 10px 3px; background-color:#8E44AD; color: white; text-decoration: none; border-radius: 8px; font-size: 16px; font-weight: bold;">
+              ☎️ Oficina: 55-6395-6800
+            </a>
+          </div>
+          <!-- Botón: Enviar mensaje por WhatsApp -->
+          <a href="https://wa.me/525521485031" target="_blank" rel="noopener"
+            style="display: inline-block; width: 100%; max-width: 310px; padding: 10px 3px; background-color: #005C4B; color: white; text-decoration: none; border-radius: 8px; font-size: 16px; font-weight: bold;">
+            <!-- Ícono SVG de WhatsApp -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"
+              style="height: 20px; margin-right: 10px; fill: white;">
+              <path
+                d="M16 .4C7.4.4.4 7.4.4 16c0 2.9.8 5.7 2.4 8.1L.4 31.6l7.8-2c2.3 1.3 5 2 7.8 2 8.6 0 15.6-7 15.6-15.6S24.6.4 16 .4z" />
+              <path fill="#25D366"
+                d="M24 21.6c-.4 1.1-2.2 2-3 2.1-.8.1-1.8.1-3-.3-3.1-1-5.4-3.5-6.3-4.6-.9-1.2-2.1-3.2-2.3-4.5-.2-1.3-.2-2.3 0-2.7.4-1 1.1-1.5 1.6-1.6.4-.1.8-.1 1.1 0 .3.1.7.6.8 1.1.3 1 .6 2 1.2 2.6.3.3.3.3.2.6-.1.3-.2.4-.3.5-.2.2-.3.3-.5.5-.2.2-.3.3-.1.6.2.3 1.2 2.1 3 3.1 1.8 1 2.2.9 2.6.8.3-.1 1.1-.5 1.3-.9.2-.4.6-.4.9-.2.3.1 1.6.8 1.9 1 .3.2.5.3.5.5s0 1.3-.4 2.2z" />
+            </svg>
+            Mensaje por WhatsApp
+          </a>
+        </div><br>
+        <p>
+          <strong style="background-color:#cc0000; color:white;">ENVIAMOS A TODO EL PAÍS.</strong><br>
+          <strong style="color:#ffff00;">Precio:</strong> $75.00 pesos, más envío nacional.<br>
+          <strong style="color:#00ff00;">¡Envío gratis en CDMX por compras mayores a cinco piezas!</strong>
+        </p>
+        <p>
+          <strong style="color:#ff9999;">Precio especial a mayoristas:</strong> comuníquese con nosotros.
+        </p>
+        <p>
+          <strong style="background-color:#cc0000; color:white;">VIDEO DEL MODO DE EMPLEO:</strong> Aprenda las dos
+          técnicas disponibles para
+          aplicar la crema DERMATOL.<br>
+          <a href="https://www.youtube.com/watch?v=hEgNq8ud3SI&t=3s" target="_blank" rel="noopener"
+            style="color:#00ffff; text-decoration: underline;"><strong>&rarr; CLICK AQUÍ PARA VER EL VIDEO
+              &larr;</strong></a>
+        </p>
+        <p>
+          <strong style="color:#ffff00;">Nota:</strong> si adquirió el producto en promoción especial de camión, le
+          respetaremos ese mismo precio.
+        </p>
+      </div>
+      <!-- JABÓN DE BARRO -->
+      <div id="jabon" class="product">
+        <h2 style="color: #ffcc00;">JABÓN DE BARRO</h2>
+        <img src="Fotos/SaludyBelleza/JABON.webp" alt="Jabón de Barro">
+        <p>
+          <span style="background-color:#00b6fa; color:white;"><strong>INDUSTRIAS</strong></span>
+          <span style="background-color:#cc0000; color:white;"><strong>CONTRERAS</strong></span> pone en tus manos el
+          <strong style="color:#ffcc00;">JABÓN DE BARRO</strong>, un producto artesanal elaborado con <strong>barro
+            mineral natural</strong>,
+          cuidadosamente tratado para brindar múltiples beneficios a tu piel.
+        </p>
+        <p>
+          <strong style="color:#ffcc00;">LIMPIADOR PROFUNDO:</strong> elimina toxinas, impurezas y residuos acumulados
+          en los poros gracias a las propiedades absorbentes del barro termal.
+        </p>
+        <p><strong style="color:#ffcc00;">EXFOLIANTE NATURAL:</strong> remueve células muertas sin dañar la piel. Su uso
+          frecuente promueve una textura suave y uniforme.
+        </p>
+        <p>
+          <strong style="color:#ffcc00;">REVITALIZANTE:</strong> estimula la oxigenación de la piel, dejándola con una
+          sensación fresca y renovada.
+        </p>
+        <p>
+          <strong style="color:#ffcc00;">EQUILIBRANTE:</strong> regula el exceso de grasa y ayuda a mantener la piel
+          libre de brotes e imperfecciones. Ideal para piel mixta o grasa.
+        </p>
+        <p>
+          <strong style="color:#ffcc00;">USO RECOMENDADO:</strong> para <strong>la cara</strong>. Aplicar
+          directamente sobre la piel limpia y húmeda con movimientos circulares suaves. Dejar actuar como mascarilla
+          durante 10 minutos. Enjuagar y dejar que se seque solo. Puede usarse las veces que guste a la semana.
+        </p>
+        <p>
+          <strong style="color:#ffcc00;">PEDIDOS:</strong>
+        </p>
+        <!-- CONTACTOS -->
+        <div style="text-align:center;">
+          <!-- Botón: Correo electrónico -->
+          <div style=" margin: 0px 0;">
+            <a href="mailto:ventas@industriascontreras.com"
+              style="display: inline-block; width: 100%; max-width: 310px; padding: 10px 3px; background-color: #ff8800; color: white; text-decoration: none; border-radius: 8px; font-size: 14px; font-weight: bold;">📨
+              ventas@industriascontreras.com
+            </a>
+          </div>
+          <!-- Botón: Llamar al número personal -->
+          <div style="margin: 15px 0;">
+            <a href="tel:5521485031"
+              style="display: inline-block; width: 100%; max-width: 310px; padding: 10px 3px; background-color:#007bff; color: white; text-decoration: none; border-radius: 8px; font-size: 16px; font-weight: bold;">
+              📳 Celular: 55-2148-5031
+            </a>
+          </div>
+          <!-- Botón: Llamar a oficina -->
+          <div style="margin: 15px 0;">
+            <a href="tel:5563956800"
+              style="display: inline-block; width: 100%; max-width: 310px; padding: 10px 3px; background-color:#8E44AD; color: white; text-decoration: none; border-radius: 8px; font-size: 16px; font-weight: bold;">
+              ☎️ Oficina: 55-6395-6800
+            </a>
+          </div>
+          <!-- Botón: Enviar mensaje por WhatsApp -->
+          <a href="https://wa.me/525521485031" target="_blank" rel="noopener"
+            style="display: inline-block; width: 100%; max-width: 310px; padding: 10px 3px; background-color: #005C4B; color: white; text-decoration: none; border-radius: 8px; font-size: 16px; font-weight: bold;">
+            <!-- Ícono SVG de WhatsApp -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"
+              style="height: 20px; margin-right: 10px; fill: white;">
+              <path
+                d="M16 .4C7.4.4.4 7.4.4 16c0 2.9.8 5.7 2.4 8.1L.4 31.6l7.8-2c2.3 1.3 5 2 7.8 2 8.6 0 15.6-7 15.6-15.6S24.6.4 16 .4z" />
+              <path fill="#25D366"
+                d="M24 21.6c-.4 1.1-2.2 2-3 2.1-.8.1-1.8.1-3-.3-3.1-1-5.4-3.5-6.3-4.6-.9-1.2-2.1-3.2-2.3-4.5-.2-1.3-.2-2.3 0-2.7.4-1 1.1-1.5 1.6-1.6.4-.1.8-.1 1.1 0 .3.1.7.6.8 1.1.3 1 .6 2 1.2 2.6.3.3.3.3.2.6-.1.3-.2.4-.3.5-.2.2-.3.3-.5.5-.2.2-.3.3-.1.6.2.3 1.2 2.1 3 3.1 1.8 1 2.2.9 2.6.8.3-.1 1.1-.5 1.3-.9.2-.4.6-.4.9-.2.3.1 1.6.8 1.9 1 .3.2.5.3.5.5s0 1.3-.4 2.2z" />
+            </svg>
+            Mensaje por WhatsApp
+          </a>
+        </div>
+        <br>
+        <p><strong style="color:#ffcc00;">ENVIAMOS A TODO EL PAÍS.</strong><br>
+          <strong style="color:#ffff00;">Precio:</strong> $55.00 pesos, más envío nacional.<br>
+          <strong style="color:#00ff00;">¡Envío gratis en CDMX por compras mayores a cinco piezas!</strong>
+        </p>
+        <p>
+          <strong style="color:#ff9999;">Precio especial a mayoristas:</strong> comuníquese con nosotros.
+        </p>
+        <p>
+          <strong style="color:#ffff00;">Nota:</strong> si adquirió el producto en promoción especial de camión, le
+          respetaremos ese mismo
+          precio.
+        </p>
+      </div>
+      <!-- EQUIPO H-M -->
+      <div id="kit" class="product">
+        <h2 style="color:#00ffff;"><strong>EQUIPO DE REDUCCIÓN H-M</strong></h2>
+        <img src="Fotos/SaludyBelleza/KITHM.webp" alt="Equipo H-M">
+        <p>
+          <span style="background-color:#00b6fa; color:white;"><strong>INDUSTRIAS</strong></span>
+          <span style="background-color:#cc0000; color:white;"><strong>CONTRERAS</strong></span> pone en tus manos el
+          <strong style="color:#00ffff;"> Equipo de Reducción H/M</strong>, diseñado para hombres y mujeres que buscan
+          moldear su figura y
+          reducir grasa
+          corporal con métodos naturales y accesibles.
+        </p>
+        <p>
+          <strong style="color:#00ffff;">KIT:</strong>
+        </p>
+        <ul style="color:#ccc;">
+          <li>1 Faja Reductora H/M.</li>
+          <li>1 Crema Reductiva H/M.</li>
+          <li>1 Loción Reafirmante de Tejidos H/M.</li>
+          <li>Guía impresa con instrucciones completas.</li>
+        </ul>
+        <p>
+          <strong style="color:#00ffff;">MMODO DE EMPLEO:</strong><br>
+          1. <strong>Aplicar la Crema Reductiva H/M</strong> con masajes circulares en la zona abdominal.<br>
+          2. (Opcional) Colocar una playera de algodón o venda ligera.<br>
+          3. Colocar la <strong>Faja Reductora H/M</strong> y realizar tus actividades cotidianas (ejercicio, tareas
+          domésticas, trabajo).<br>
+          4. Mantener puesta de 30 minutos a 6 horas según tolerancia.<br>
+          5. Bañarse y aplicar la <strong>Loción Reafirmante H/M</strong> con masajes ascendentes y firmes.<br>
+          6. (Opcional) Volver a usar la faja tras la loción para mejorar el moldeo de cintura.
+        </p>
+        <p>
+          <strong style="color:#00ffff;">SUGERENCIAS PARA MEJORES RESULTADOS:</strong>
+        </p>
+        <ul style="color:#ccc;">
+          <li>Evitar el exceso de pan, tortillas y comidas grasas, especialmente por la noche.</li>
+          <li>No comer después de las 8 p.m. y tomar suficiente agua, al menos 2 vasos en ayunas.</li>
+          <li>Llevar un registro semanal de medidas con cinta métrica a la altura del ombligo.</li>
+          <li>Usar el equipo mínimo 5 días por semana, con 1 o 2 días de descanso si se desea.</li>
+          <li>Limpiar tu faja con un paño seco después de cada uso para mantenerla lista.</li>
+          <li>Si usas vendas o playeras, lávalas mientras te bañas para tenerlas limpias al día siguiente.</li>
+        </ul>
+        <p>
+          <strong style="color:#00ffff;">¿SABÍAS QUÉ?</strong><br>
+          La faja por sí sola solo promueve sudoración. Es indispensable combinarla con la crema reductiva y movimiento
+          físico (caminar, barrer, hacer ejercicio, etc.) para lograr una verdadera quema de grasa.<br>
+          El baño con agua fría o templada fortalece los músculos y ayuda a evitar flacidez.<br>
+          La loción reafirmante es 100% natural y no mancha la ropa.
+        </p>
+        <p>
+          <strong style="color:#00ffff;">PRECIO:</strong><br>
+          $430 MXN (crema + faja + loción + instructivo).<br>
+          <em>Envío gratis en CDMX por la compra de 5 piezas o más.</em>
+        </p>
+        <p>
+          <strong style="color:#00ffff;">PEDIDOS:</strong>
+        </p>
+        <div style="text-align:center;">
+          <!-- Botón: Correo electrónico -->
+          <div style=" margin: 0px 0;">
+            <a href="mailto:ventas@industriascontreras.com"
+              style="display: inline-block; width: 100%; max-width: 310px; padding: 10px 3px; background-color: #ff8800; color: white; text-decoration: none; border-radius: 8px; font-size: 14px; font-weight: bold;">📨
+              ventas@industriascontreras.com
+            </a>
+          </div>
+          <!-- Botón: Llamar al número personal -->
+          <div style="margin: 15px 0;">
+            <a href="tel:5521485031"
+              style="display: inline-block; width: 100%; max-width: 310px; padding: 10px 3px; background-color:#007bff; color: white; text-decoration: none; border-radius: 8px; font-size: 16px; font-weight: bold;">
+              📳 Celular: 55-2148-5031
+            </a>
+          </div>
+          <!-- Botón: Llamar a oficina -->
+          <div style="margin: 15px 0;">
+            <a href="tel:5563956800"
+              style="display: inline-block; width: 100%; max-width: 310px; padding: 10px 3px; background-color:#8E44AD; color: white; text-decoration: none; border-radius: 8px; font-size: 16px; font-weight: bold;">
+              ☎️ Oficina: 55-6395-6800
+            </a>
+          </div>
+          <!-- Botón: Enviar mensaje por WhatsApp -->
+          <a href="https://wa.me/525521485031" target="_blank" rel="noopener"
+            style="display: inline-block; width: 100%; max-width: 310px; padding: 10px 3px; background-color: #005C4B; color: white; text-decoration: none; border-radius: 8px; font-size: 16px; font-weight: bold;">
+            <!-- Ícono SVG de WhatsApp -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"
+              style="height: 20px; margin-right: 10px; fill: white;">
+              <path
+                d="M16 .4C7.4.4.4 7.4.4 16c0 2.9.8 5.7 2.4 8.1L.4 31.6l7.8-2c2.3 1.3 5 2 7.8 2 8.6 0 15.6-7 15.6-15.6S24.6.4 16 .4z" />
+              <path fill="#25D366"
+                d="M24 21.6c-.4 1.1-2.2 2-3 2.1-.8.1-1.8.1-3-.3-3.1-1-5.4-3.5-6.3-4.6-.9-1.2-2.1-3.2-2.3-4.5-.2-1.3-.2-2.3 0-2.7.4-1 1.1-1.5 1.6-1.6.4-.1.8-.1 1.1 0 .3.1.7.6.8 1.1.3 1 .6 2 1.2 2.6.3.3.3.3.2.6-.1.3-.2.4-.3.5-.2.2-.3.3-.5.5-.2.2-.3.3-.1.6.2.3 1.2 2.1 3 3.1 1.8 1 2.2.9 2.6.8.3-.1 1.1-.5 1.3-.9.2-.4.6-.4.9-.2.3.1 1.6.8 1.9 1 .3.2.5.3.5.5s0 1.3-.4 2.2z" />
+            </svg>
+            Mensaje por WhatsApp
+          </a>
+        </div>
+        <br>
+        <p>
+          <strong style="color:#ffff00;">Nota:</strong><br>
+          Este producto está garantizado. Los resultados dependen de la constancia y del metabolismo de cada persona.
+          Para resultados más
+          intensivos, puedes combinar con cápsulas naturales (consulta con tu médico).
+        </p>
+
+      </div>
+    </div>
+    <!-- SHOW PRODUCTOS -->
+    <div class="sidebar">
+      <span class="sidebar-title"><strong>ELIGE TU PRODUCTO</strong></span>
+      <img src="Fotos/SaludyBelleza/REUMATOL.webp" alt="REUMATOL" onclick="showProduct('reumatol')">
+      <img src="Fotos/SaludyBelleza/DERMATOL.webp" alt="DERMATOL" onclick="showProduct('dermatol')">
+      <img src="Fotos/SaludyBelleza/JABON.webp" alt="JABÓN DE BARRO" onclick="showProduct('jabon')">
+      <img src="Fotos/SaludyBelleza/KITHM.webp" alt="EQUIPO H-M" onclick="showProduct('kit')">
+    </div>
+  </div>
+
+  <!--                       TODOS LOS PRODUCTOS                        -->
+  <hr style="border-color:#444; margin: 10px 0; margin-top: -10px;">
+  <section style="padding: 15px; background-color: #000; margin-top: -20px;">
+    <h2 style="color: #ffcc00; text-align: center;">TODOS LOS PRODUCTOS</h2>
+
+    <div style="display: flex; flex-direction: column; gap: 40px; margin-top: -15px;">
+
+      <!-- REUMATOL -->
+      <div style="background-color:#111; border:1px solid #444; border-radius:8px; padding:15px;">
+        <img src="Fotos/SaludyBelleza/REUMATOL.webp" alt="REUMATOL"
+          style="width: 150px; float: right; margin-left: 20px; border-radius: 5px;">
+        <h2><strong style="color:#007BFF;">REUMATOL</strong></h2>
+        <p>
+          <span style="background-color:#00b6fa; color:white;"><strong>INDUSTRIAS</strong></span>
+          <span style="background-color:#cc0000; color:white;"><strong>CONTRERAS</strong></span>
+          pone en sus manos el <strong style="color:#007BFF;">GEL REUMATOL</strong>, un producto de <strong>venta
+            libre</strong> porque sus
+          ingredientes así lo son.
+        </p>
+        <p>
+          <strong style="color:#007BFF;">EFICAZ PARA:</strong> toda clase de <strong>dolores
+            musculares</strong>, ya
+          que es un analgésico y desinflamatorio tópico. Contiene <strong>mentol, alcanfor y salicilato de
+            metilo</strong>, entre otros ingredientes. Este último es uno de los más potentes desinflamatorios y
+          analgésicos musculares que existen.
+        </p>
+        <p>
+          <strong style="color:#007BFF;">ÚTIL EN:</strong> golpes, golpes contusos, calambres,
+          distensiones y esguinces
+          grado 1. Además, necesario ante todo <strong>dolor muscular, artrítico, reumático, lumbar, nefrítico</strong>,
+          así como en: piernas, brazos, rodillas, manos, codos, espalda y articulaciones. También se usa cuando hay
+          frialdad, e igualmente para lesiones por accidentes en casa, trabajo, colegio y deporte.
+        </p>
+        <p>
+          <strong style="color:#007BFF;">VENTAJAS:</strong> no mancha la ropa, tampoco deja
+          pegajosa ni grasosa la
+          piel. Tiene cuerpo, un olor agradable, y las sustancias con las que está elaborado brindan <strong>mejoría,
+            confort y seguridad</strong>.
+        </p>
+        <p>
+          <strong style="color:#007BFF;">DIFERENCIA ENTRE ARTRITIS Y REUMATISMO:</strong>
+          aunque parecen sinónimos, no
+          lo son. La <strong>artritis</strong> es una enfermedad de las articulaciones, mientras que el
+          <strong>reumatismo</strong> se refiere a todas las dolencias que afectan a los músculos, tendones y
+          articulaciones.
+        </p>
+        <p>
+          <strong style="color:#007BFF;">MODO DE EMPLEO:</strong> si lo prefiere, báñese
+          primero. Aplique a criterio
+          <strong style="color:#007BFF;">REUMATOL</strong> en la región a usar, y aunque sí se puede mojar, es mejor no
+          hacerlo durante las
+          próximas 12 horas. Use un calcetín limpio o una venda no tan apretada.
+        </p>
+        <p>
+          <strong style="color:#007BFF;">PEDIDOS:</strong><br>
+        </p>
+        <div style="text-align:center;">
+          <!-- Botón: Correo electrónico -->
+          <div style=" margin: 0px 0;">
+            <a href="mailto:ventas@industriascontreras.com"
+              style="display: inline-block; width: 100%; max-width: 310px; padding: 10px 3px; background-color: #ff8800; color: white; text-decoration: none; border-radius: 8px; font-size: 14px; font-weight: bold;">📨
+              ventas@industriascontreras.com
+            </a>
+          </div>
+          <!-- Botón: Llamar al número personal -->
+          <div style="margin: 15px 0;">
+            <a href="tel:5521485031"
+              style="display: inline-block; width: 100%; max-width: 310px; padding: 10px 3px; background-color:#007bff; color: white; text-decoration: none; border-radius: 8px; font-size: 16px; font-weight: bold;">
+              📳 Celular: 55-2148-5031
+            </a>
+          </div>
+          <!-- Botón: Llamar a oficina -->
+          <div style="margin: 15px 0;">
+            <a href="tel:5563956800"
+              style="display: inline-block; width: 100%; max-width: 310px; padding: 10px 3px; background-color:#8E44AD; color: white; text-decoration: none; border-radius: 8px; font-size: 16px; font-weight: bold;">
+              ☎️ Oficina: 55-6395-6800
+            </a>
+          </div>
+          <!-- Botón: Enviar mensaje por WhatsApp -->
+          <a href="https://wa.me/525521485031" target="_blank" rel="noopener"
+            style="display: inline-block; width: 100%; max-width: 310px; padding: 10px 3px; background-color: #005C4B; color: white; text-decoration: none; border-radius: 8px; font-size: 16px; font-weight: bold;">
+            <!-- Ícono SVG de WhatsApp -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"
+              style="height: 20px; margin-right: 10px; fill: white;">
+              <path
+                d="M16 .4C7.4.4.4 7.4.4 16c0 2.9.8 5.7 2.4 8.1L.4 31.6l7.8-2c2.3 1.3 5 2 7.8 2 8.6 0 15.6-7 15.6-15.6S24.6.4 16 .4z" />
+              <path fill="#25D366"
+                d="M24 21.6c-.4 1.1-2.2 2-3 2.1-.8.1-1.8.1-3-.3-3.1-1-5.4-3.5-6.3-4.6-.9-1.2-2.1-3.2-2.3-4.5-.2-1.3-.2-2.3 0-2.7.4-1 1.1-1.5 1.6-1.6.4-.1.8-.1 1.1 0 .3.1.7.6.8 1.1.3 1 .6 2 1.2 2.6.3.3.3.3.2.6-.1.3-.2.4-.3.5-.2.2-.3.3-.5.5-.2.2-.3.3-.1.6.2.3 1.2 2.1 3 3.1 1.8 1 2.2.9 2.6.8.3-.1 1.1-.5 1.3-.9.2-.4.6-.4.9-.2.3.1 1.6.8 1.9 1 .3.2.5.3.5.5s0 1.3-.4 2.2z" />
+            </svg>
+            Mensaje por WhatsApp
+          </a>
+        </div>
+        <br>
+        <p>
+          <strong style="color:#00ffff;">ENVIAMOS A TODO EL PAÍS.</strong><br>
+          <strong style="color:#ffff00;">Precio:</strong> $65 pesos, más envío en la República Mexicana. <br>
+          <strong style="color:#00ff00;">¡Envío gratis en la Ciudad de México cuando su compra sea mayor a cinco
+            piezas!</strong>
+        </p>
+        <p>
+          <strong style="color:#ff9999;">Precio especial a mayoristas:</strong> comuníquese con nosotros.
+        </p>
+        <p>
+          <strong style="color:#ffff00;">Nota:</strong> si adquirió el producto en promoción especial de camión, le
+          respetaremos ese mismo precio.
+        </p>
+      </div>
+
+      <!-- DERMATOL -->
+      <div style="background-color:#111; border:1px solid #444; border-radius:8px; padding:15px;">
+        <img src="Fotos/SaludyBelleza/DERMATOL.webp" alt="DERMATOL"
+          style="width: 150px; float: right; margin-left: 20px; border-radius: 5px;">
+        <h2 style="color:#ff0000;">DERMATOL</h2>
+        <p>
+          <span style="background-color:#00b6fa; color:white;"><strong>INDUSTRIAS</strong></span>
+          <span style="background-color:#cc0000; color:white;"><strong>CONTRERAS</strong></span> pone en sus manos
+          <strong>DERMATOL</strong>, la crema de <strong>concha nácar con tepezcohuite 100% original</strong>.
+        </p>
+        <p>
+          Fabricada en invernadero, lo que garantiza que sea una crema limpia. El tepezcohuite, proveniente de
+          Chiapas, es micropulverizado de manera totalmente higiénica por expertos que lavan perfectamente la corteza
+          del árbol.
+        </p><br>
+        <p>
+          <strong style="background-color:#cc0000; color:white;">LA CONCHA NÁCAR:</strong> hidrata y desmancha.
+        </p>
+        <p><strong style="background-color:#cc0000; color:white;">EL TEPEZCOHUITE:</strong> regenera.<br>
+        </p>
+        <p><strong style="background-color:#cc0000; color:white;">JUNTOS:</strong> exfolian<br>
+        </p><br>
+        <p>
+          <strong style="background-color:#cc0000; color:white;">HIDRATADORA:</strong> al hidratar la piel, permite una
+          limpieza más profunda
+          de los poros cuando se usa agua y jabón. Además, cuando la grasa innecesaria brota (principalmente por la
+          noche), encuentra una piel más limpia, reduciendo la acumulación de microbios y bacterias. Resultado: menos
+          infección y menor aparición de barros.
+        </p>
+        <p>
+          <strong style="background-color:#cc0000; color:white;">DESMANCHADORA:</strong> ayuda a recuperar el tono
+          original de la piel. Es
+          reconocida por su efectividad contra el paño y manchas <strong>rojas, negras, cafés y blancas</strong>.
+        </p>
+        <p>
+          <strong style="background-color:#cc0000; color:white;">REGENERADORA:</strong> el tepezcohuite es el mejor
+          regenerador natural del
+          mundo, reconocido internacionalmente por asociaciones de apoyo a niños con quemaduras. Incluso el Gobierno
+          Mexicano lo ha utilizado en tratamientos para quemaduras graves.
+        </p>
+        <p>
+          <strong style="background-color:#cc0000; color:white;">EXFOLIADORA:</strong> elimina células muertas y
+          favorece el trabajo de las
+          nuevas células oxigenadas.
+        </p>
+        <p><strong style="background-color:#cc0000; color:white;">USO:</strong> exclusivamente
+          <strong>nocturno</strong>.
+        </p><br>
+        <p>
+          <strong style="background-color:#cc0000; color:white;">PEDIDOS:</strong>
+        </p>
+        <div style="text-align:center;">
+          <!-- Botón: Correo electrónico -->
+          <div style=" margin: 0px 0;">
+            <a href="mailto:ventas@industriascontreras.com"
+              style="display: inline-block; width: 100%; max-width: 310px; padding: 10px 3px; background-color: #ff8800; color: white; text-decoration: none; border-radius: 8px; font-size: 14px; font-weight: bold;">📨
+              ventas@industriascontreras.com
+            </a>
+          </div>
+          <!-- Botón: Llamar al número personal -->
+          <div style="margin: 15px 0;">
+            <a href="tel:5521485031"
+              style="display: inline-block; width: 100%; max-width: 310px; padding: 10px 3px; background-color:#007bff; color: white; text-decoration: none; border-radius: 8px; font-size: 16px; font-weight: bold;">
+              📳 Celular: 55-2148-5031
+            </a>
+          </div>
+          <!-- Botón: Llamar a oficina -->
+          <div style="margin: 15px 0;">
+            <a href="tel:5563956800"
+              style="display: inline-block; width: 100%; max-width: 310px; padding: 10px 3px; background-color:#8E44AD; color: white; text-decoration: none; border-radius: 8px; font-size: 16px; font-weight: bold;">
+              ☎️ Oficina: 55-6395-6800
+            </a>
+          </div>
+          <!-- Botón: Enviar mensaje por WhatsApp -->
+          <a href="https://wa.me/525521485031" target="_blank" rel="noopener"
+            style="display: inline-block; width: 100%; max-width: 310px; padding: 10px 3px; background-color: #005C4B; color: white; text-decoration: none; border-radius: 8px; font-size: 16px; font-weight: bold;">
+            <!-- Ícono SVG de WhatsApp -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"
+              style="height: 20px; margin-right: 10px; fill: white;">
+              <path
+                d="M16 .4C7.4.4.4 7.4.4 16c0 2.9.8 5.7 2.4 8.1L.4 31.6l7.8-2c2.3 1.3 5 2 7.8 2 8.6 0 15.6-7 15.6-15.6S24.6.4 16 .4z" />
+              <path fill="#25D366"
+                d="M24 21.6c-.4 1.1-2.2 2-3 2.1-.8.1-1.8.1-3-.3-3.1-1-5.4-3.5-6.3-4.6-.9-1.2-2.1-3.2-2.3-4.5-.2-1.3-.2-2.3 0-2.7.4-1 1.1-1.5 1.6-1.6.4-.1.8-.1 1.1 0 .3.1.7.6.8 1.1.3 1 .6 2 1.2 2.6.3.3.3.3.2.6-.1.3-.2.4-.3.5-.2.2-.3.3-.5.5-.2.2-.3.3-.1.6.2.3 1.2 2.1 3 3.1 1.8 1 2.2.9 2.6.8.3-.1 1.1-.5 1.3-.9.2-.4.6-.4.9-.2.3.1 1.6.8 1.9 1 .3.2.5.3.5.5s0 1.3-.4 2.2z" />
+            </svg>
+            Mensaje por WhatsApp
+          </a>
+        </div><br>
+        <p>
+          <strong style="background-color:#cc0000; color:white;">ENVIAMOS A TODO EL PAÍS.</strong><br>
+          <strong style="color:#ffff00;">Precio:</strong> $75.00 pesos, más envío nacional.<br>
+          <strong style="color:#00ff00;">¡Envío gratis en CDMX por compras mayores a cinco piezas!</strong>
+        </p>
+        <p>
+          <strong style="color:#ff9999;">Precio especial a mayoristas:</strong> comuníquese con nosotros.
+        </p>
+        <p>
+          <strong style="background-color:#cc0000; color:white;">VIDEO DEL MODO DE EMPLEO:</strong> Aprenda las dos
+          técnicas disponibles para
+          aplicar la crema DERMATOL.<br>
+          <a href="https://www.youtube.com/watch?v=hEgNq8ud3SI&t=3s" target="_blank" rel="noopener"
+            style="color:#00ffff; text-decoration: underline;"><strong>&rarr; CLICK AQUÍ PARA VER EL VIDEO
+              &larr;</strong></a>
+        </p>
+        <p>
+          <strong style="color:#ffff00;">Nota:</strong> si adquirió el producto en promoción especial de camión, le
+          respetaremos ese mismo precio.
+        </p>
+      </div>
+
+      <!-- JABÓN -->
+      <div style="background-color:#111; border:1px solid #444; border-radius:8px; padding:15px;">
+        <img src="Fotos/SaludyBelleza/JABON.webp" alt="JABÓN DE BARRO"
+          style="width: 150px; float: right; margin-left: 20px; border-radius: 5px;">
+        <h2 style="color:#ffcc00;">JABÓN DE BARRO</h2>
+        <p>
+          <span style="background-color:#00b6fa; color:white;"><strong>INDUSTRIAS</strong></span>
+          <span style="background-color:#cc0000; color:white;"><strong>CONTRERAS</strong></span> pone en tus manos el
+          <strong style="color:#ffcc00;">JABÓN DE BARRO</strong>, un producto artesanal elaborado con <strong>barro
+            mineral natural</strong>,
+          cuidadosamente tratado para brindar múltiples beneficios a tu piel.
+        </p>
+        <p>
+          <strong style="color:#ffcc00;">LIMPIADOR PROFUNDO:</strong> elimina toxinas, impurezas y residuos acumulados
+          en los poros gracias a las propiedades absorbentes del barro termal.
+        </p>
+        <p><strong style="color:#ffcc00;">EXFOLIANTE NATURAL:</strong> remueve células muertas sin dañar la piel. Su uso
+          frecuente promueve una textura suave y uniforme.
+        </p>
+        <p>
+          <strong style="color:#ffcc00;">REVITALIZANTE:</strong> estimula la oxigenación de la piel, dejándola con una
+          sensación fresca y renovada.
+        </p>
+        <p>
+          <strong style="color:#ffcc00;">EQUILIBRANTE:</strong> regula el exceso de grasa y ayuda a mantener la piel
+          libre de brotes e imperfecciones. Ideal para piel mixta o grasa.
+        </p>
+        <p>
+          <strong style="color:#ffcc00;">USO RECOMENDADO:</strong> para <strong>la cara</strong>. Aplicar
+          directamente sobre la piel limpia y húmeda con movimientos circulares suaves. Dejar actuar como mascarilla
+          durante 10 minutos. Enjuagar y dejar que se seque solo. Puede usarse las veces que guste a la semana.
+        </p>
+        <p>
+          <strong style="color:#ffcc00;">PEDIDOS:</strong>
+        </p>
+        <!-- CONTACTOS -->
+        <div style="text-align:center;">
+          <!-- Botón: Correo electrónico -->
+          <div style=" margin: 0px 0;">
+            <a href="mailto:ventas@industriascontreras.com"
+              style="display: inline-block; width: 100%; max-width: 310px; padding: 10px 3px; background-color: #ff8800; color: white; text-decoration: none; border-radius: 8px; font-size: 14px; font-weight: bold;">📨
+              ventas@industriascontreras.com
+            </a>
+          </div>
+          <!-- Botón: Llamar al número personal -->
+          <div style="margin: 15px 0;">
+            <a href="tel:5521485031"
+              style="display: inline-block; width: 100%; max-width: 310px; padding: 10px 3px; background-color:#007bff; color: white; text-decoration: none; border-radius: 8px; font-size: 16px; font-weight: bold;">
+              📳 Celular: 55-2148-5031
+            </a>
+          </div>
+          <!-- Botón: Llamar a oficina -->
+          <div style="margin: 15px 0;">
+            <a href="tel:5563956800"
+              style="display: inline-block; width: 100%; max-width: 310px; padding: 10px 3px; background-color:#8E44AD; color: white; text-decoration: none; border-radius: 8px; font-size: 16px; font-weight: bold;">
+              ☎️ Oficina: 55-6395-6800
+            </a>
+          </div>
+          <!-- Botón: Enviar mensaje por WhatsApp -->
+          <a href="https://wa.me/525521485031" target="_blank" rel="noopener"
+            style="display: inline-block; width: 100%; max-width: 310px; padding: 10px 3px; background-color: #005C4B; color: white; text-decoration: none; border-radius: 8px; font-size: 16px; font-weight: bold;">
+            <!-- Ícono SVG de WhatsApp -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"
+              style="height: 20px; margin-right: 10px; fill: white;">
+              <path
+                d="M16 .4C7.4.4.4 7.4.4 16c0 2.9.8 5.7 2.4 8.1L.4 31.6l7.8-2c2.3 1.3 5 2 7.8 2 8.6 0 15.6-7 15.6-15.6S24.6.4 16 .4z" />
+              <path fill="#25D366"
+                d="M24 21.6c-.4 1.1-2.2 2-3 2.1-.8.1-1.8.1-3-.3-3.1-1-5.4-3.5-6.3-4.6-.9-1.2-2.1-3.2-2.3-4.5-.2-1.3-.2-2.3 0-2.7.4-1 1.1-1.5 1.6-1.6.4-.1.8-.1 1.1 0 .3.1.7.6.8 1.1.3 1 .6 2 1.2 2.6.3.3.3.3.2.6-.1.3-.2.4-.3.5-.2.2-.3.3-.5.5-.2.2-.3.3-.1.6.2.3 1.2 2.1 3 3.1 1.8 1 2.2.9 2.6.8.3-.1 1.1-.5 1.3-.9.2-.4.6-.4.9-.2.3.1 1.6.8 1.9 1 .3.2.5.3.5.5s0 1.3-.4 2.2z" />
+            </svg>
+            Mensaje por WhatsApp
+          </a>
+        </div>
+        <br>
+        <p><strong style="color:#ffcc00;">ENVIAMOS A TODO EL PAÍS.</strong><br>
+          <strong style="color:#ffff00;">Precio:</strong> $55.00 pesos, más envío nacional.<br>
+          <strong style="color:#00ff00;">¡Envío gratis en CDMX por compras mayores a cinco piezas!</strong>
+        </p>
+        <p>
+          <strong style="color:#ff9999;">Precio especial a mayoristas:</strong> comuníquese con nosotros.
+        </p>
+        <p>
+          <strong style="color:#ffff00;">Nota:</strong> si adquirió el producto en promoción especial de camión, le
+          respetaremos ese mismo
+          precio.
+        </p>
+      </div>
+
+      <!-- EQUIPO H-M -->
+      <div style="background-color:#111; border:1px solid #444; border-radius:8px; padding:15px;">
+        <img src="Fotos/SaludyBelleza/KITHM.webp" alt="Equipo H-M"
+          style="width: 150px; float: right; margin-left: 20px; border-radius: 5px;">
+        <h2 style="color:#00ffff;">EQUIPO DE REDUCCIÓN H-M</h2>
+        <p>
+          <span style="background-color:#00b6fa; color:white;"><strong>INDUSTRIAS</strong></span>
+          <span style="background-color:#cc0000; color:white;"><strong>CONTRERAS</strong></span> pone en tus manos el
+          <strong style="color:#00ffff;">Equipo de Reducción H/M</strong>, diseñado para hombres y mujeres que buscan
+          moldear su figura y
+          reducir grasa
+          corporal con métodos naturales y accesibles.
+        </p>
+        <p>
+          <strong style="color:#00ffff;">KIT:</strong>
+        </p>
+        <ul style="color:#ccc;">
+          <li>1 Faja Reductora H/M.</li>
+          <li>1 Crema Reductiva H/M.</li>
+          <li>1 Loción Reafirmante de Tejidos H/M.</li>
+          <li>Guía impresa con instrucciones completas.</li>
+        </ul>
+        <p>
+          <strong style="color:#00ffff;">MMODO DE EMPLEO:</strong><br>
+          1. <strong>Aplicar la Crema Reductiva H/M</strong> con masajes circulares en la zona abdominal.<br>
+          2. (Opcional) Colocar una playera de algodón o venda ligera.<br>
+          3. Colocar la <strong>Faja Reductora H/M</strong> y realizar tus actividades cotidianas (ejercicio, tareas
+          domésticas, trabajo).<br>
+          4. Mantener puesta de 30 minutos a 6 horas según tolerancia.<br>
+          5. Bañarse y aplicar la <strong>Loción Reafirmante H/M</strong> con masajes ascendentes y firmes.<br>
+          6. (Opcional) Volver a usar la faja tras la loción para mejorar el moldeo de cintura.
+        </p>
+        <p>
+          <strong style="color:#00ffff;">SUGERENCIAS PARA MEJORES RESULTADOS:</strong>
+        </p>
+        <ul style="color:#ccc;">
+          <li>Evitar el exceso de pan, tortillas y comidas grasas, especialmente por la noche.</li>
+          <li>No comer después de las 8 p.m. y tomar suficiente agua, al menos 2 vasos en ayunas.</li>
+          <li>Llevar un registro semanal de medidas con cinta métrica a la altura del ombligo.</li>
+          <li>Usar el equipo mínimo 5 días por semana, con 1 o 2 días de descanso si se desea.</li>
+          <li>Limpiar tu faja con un paño seco después de cada uso para mantenerla lista.</li>
+          <li>Si usas vendas o playeras, lávalas mientras te bañas para tenerlas limpias al día siguiente.</li>
+        </ul>
+        <p>
+          <strong style="color:#00ffff;">¿SABÍAS QUÉ?</strong><br>
+          La faja por sí sola solo promueve sudoración. Es indispensable combinarla con la crema reductiva y movimiento
+          físico (caminar, barrer, hacer ejercicio, etc.) para lograr una verdadera quema de grasa.<br>
+          El baño con agua fría o templada fortalece los músculos y ayuda a evitar flacidez.<br>
+          La loción reafirmante es 100% natural y no mancha la ropa.
+        </p>
+        <p>
+          <strong style="color:#00ffff;">PRECIO:</strong><br>
+          $430 MXN (crema + faja + loción + instructivo).<br>
+          <em>Envío gratis en CDMX.</em>
+        </p>
+        <p>
+          <strong style="color:#00ffff;">PEDIDOS:</strong>
+        </p>
+        <div style="text-align:center;">
+          <!-- Botón: Correo electrónico -->
+          <div style=" margin: 0px 0;">
+            <a href="mailto:ventas@industriascontreras.com"
+              style="display: inline-block; width: 100%; max-width: 310px; padding: 10px 3px; background-color: #ff8800; color: white; text-decoration: none; border-radius: 8px; font-size: 14px; font-weight: bold;">📨
+              ventas@industriascontreras.com
+            </a>
+          </div>
+          <!-- Botón: Llamar al número personal -->
+          <div style="margin: 15px 0;">
+            <a href="tel:5521485031"
+              style="display: inline-block; width: 100%; max-width: 310px; padding: 10px 3px; background-color:#007bff; color: white; text-decoration: none; border-radius: 8px; font-size: 16px; font-weight: bold;">
+              📳 Celular: 55-2148-5031
+            </a>
+          </div>
+          <!-- Botón: Llamar a oficina -->
+          <div style="margin: 15px 0;">
+            <a href="tel:5563956800"
+              style="display: inline-block; width: 100%; max-width: 310px; padding: 10px 3px; background-color:#8E44AD; color: white; text-decoration: none; border-radius: 8px; font-size: 16px; font-weight: bold;">
+              ☎️ Oficina: 55-6395-6800
+            </a>
+          </div>
+          <!-- Botón: Enviar mensaje por WhatsApp -->
+          <a href="https://wa.me/525521485031" target="_blank" rel="noopener"
+            style="display: inline-block; width: 100%; max-width: 310px; padding: 10px 3px; background-color: #005C4B; color: white; text-decoration: none; border-radius: 8px; font-size: 16px; font-weight: bold;">
+            <!-- Ícono SVG de WhatsApp -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"
+              style="height: 20px; margin-right: 10px; fill: white;">
+              <path
+                d="M16 .4C7.4.4.4 7.4.4 16c0 2.9.8 5.7 2.4 8.1L.4 31.6l7.8-2c2.3 1.3 5 2 7.8 2 8.6 0 15.6-7 15.6-15.6S24.6.4 16 .4z" />
+              <path fill="#25D366"
+                d="M24 21.6c-.4 1.1-2.2 2-3 2.1-.8.1-1.8.1-3-.3-3.1-1-5.4-3.5-6.3-4.6-.9-1.2-2.1-3.2-2.3-4.5-.2-1.3-.2-2.3 0-2.7.4-1 1.1-1.5 1.6-1.6.4-.1.8-.1 1.1 0 .3.1.7.6.8 1.1.3 1 .6 2 1.2 2.6.3.3.3.3.2.6-.1.3-.2.4-.3.5-.2.2-.3.3-.5.5-.2.2-.3.3-.1.6.2.3 1.2 2.1 3 3.1 1.8 1 2.2.9 2.6.8.3-.1 1.1-.5 1.3-.9.2-.4.6-.4.9-.2.3.1 1.6.8 1.9 1 .3.2.5.3.5.5s0 1.3-.4 2.2z" />
+            </svg>
+            Mensaje por WhatsApp
+          </a>
+        </div>
+        <br>
+        <p>
+          <strong style="color:#ffff00;">Nota:</strong><br>
+          Este producto está garantizado. Los resultados dependen de la constancia y del metabolismo de cada persona.
+          Para resultados más
+          intensivos, puedes combinar con cápsulas naturales (consulta con tu médico).
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div style="text-align: center;">
+      <span style="font-size: 16px; display: block; margin: 10px 0; color: white;">
+        &copy; 2025 <strong>Salud y Belleza</strong><br>
+        Todos los derechos reservados.
+      </span>
+    </div>
+    <br><br>
+    <div class="col-md-3 text-center flex-grow-1">
+      <a href="https://industriascontreras.com" rel="noopener">
+        <img src="Fotos/Logos/LOGO_MATRIZ.webp" alt="Industrias Contreras" style="width: 30px; height: 40px" />
+        <p style="color: white; text-align:center;">
+          Visita la matriz <br /><strong>Industrias Contreras</strong>
+        </p>
+      </a>
+    </div>
+  </footer>
+
+  <script>
+    function showProduct(id) {
+      const products = document.querySelectorAll('.product');
+      products.forEach(p => p.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
+</body>
+
+</html>
