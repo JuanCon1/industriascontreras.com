@@ -4,9 +4,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Salud y Belleza</title>
-  <!-- Favicon-->
+  <title>Salud y Belleza | Productos Naturales de Industrias Contreras</title>
+  <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="Fotos/Iconos/SALUDYBELLEZA.ico" />
+  <!-- SEO básico -->
+  <meta name="description"
+    content="Conoce los productos naturales de Salud y Belleza: Reumatol, Dermatol, Jabón de Barro y el Kit H-M. Elaborados por Industrias Contreras para tu bienestar.">
+  <meta name="keywords"
+    content="reumatol, dermatol, jabón de barro, equipo H-M, salud natural, cuidado de la piel, dolor muscular, productos artesanales, industria mexicana, bienestar natural">
+  <meta name="author" content="Juan Contreras García">
+
+  <!-- Open Graph (para redes sociales) -->
+  <meta property="og:title" content="Salud y Belleza | Productos Naturales de Industrias Contreras">
+  <meta property="og:description"
+    content="Productos naturales como Reumatol, Dermatol, Jabón de Barro y el Kit H-M para mejorar tu salud y bienestar.">
+  <meta property="og:image" content="https://www.industriascontreras.com/Fotos/Logos/BELLEZA.webp">
+  <!-- reemplaza con la URL final -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.industriascontreras.com/SaludyBelleza.html">
+  <!-- ajusta a tu URL real -->
+
+  <!-- Twitter Cards (si se comparte en X/Twitter) -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Salud y Belleza | Productos Naturales de Industrias Contreras">
+  <meta name="twitter:description"
+    content="Descubre productos como Reumatol, Dermatol, Jabón de Barro y Kit H-M para una vida más sana.">
+  <meta name="twitter:image" content="https://www.industriascontreras.com/Fotos/Logos/BELLEZA.webp">
+
+  <!-- Indexación en buscadores -->
+  <meta name="robots" content="index, follow">
+
   <style>
     body {
       background-color: black;
@@ -28,47 +55,77 @@
 
     .container {
       display: flex;
+      flex-direction: column;
       padding: 15px;
     }
 
     .sidebar {
-      width: 20%;
-      padding-left: 10px;
-      border-left: 1px solid #444;
+      width: 100%;
+      padding: 10px 0;
+      border-left: none;
+      border-bottom: 1px solid yellow;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 8px;
+      /* Aquí controlas la separación entre productos */
     }
 
-    .sidebar img {
-      width: 100%;
-      margin-bottom: 10px;
+    .product-thumb {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 80px;
+      margin: 0;
+      /* ya no necesitas margen adicional */
+    }
+
+    .product-thumb figcaption {
+      font-size: 0.7rem;
+      color: #ffcc00;
+      margin-bottom: 5px;
+      text-align: center;
+      height: 2.4em;
+      /* todos los títulos ocupan mismo espacio */
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      line-height: 1.1;
+      font-weight: bold;
+    }
+
+    .product-thumb img {
+      width: 80px;
+      height: 70px;
+      object-fit: cover;
+      /* 👈 cambia de cover a contain */
       border-radius: 5px;
       cursor: pointer;
       border: 2px solid transparent;
     }
 
-    .sidebar img:hover {
+    .product-thumb img:hover {
       border-color: #ffcc00;
     }
 
     .sidebar-title {
-      display: block;
-      font-weight: bold;
+      width: 100%;
       text-align: center;
       margin-bottom: 10px;
       font-size: 1.1rem;
       color: #ffcc00;
-      /* tamaño base para pantallas medianas/grandes */
     }
 
-    /* Tamaño para pantallas pequeñas (celulares) */
     @media (max-width: 600px) {
       .sidebar-title {
-        font-size: 0.7rem;
+        font-size: 0.9rem;
       }
     }
 
     .content {
-      width: 80%;
-      padding-right: -20px;
+      width: 100%;
+      padding-right: 20px;
     }
 
     .product {
@@ -118,6 +175,7 @@
       padding: 20px;
     }
   </style>
+
 </head>
 
 <body>
@@ -126,7 +184,34 @@
     <p class="intro">Productos naturales para tu bienestar</p>
   </header>
 
-  <div class="container" style="margin-top: -30px;">
+  <!-- SHOW PRODUCTOS -->
+  <div class="sidebar">
+    <span class="sidebar-title" style="margin-top: -25px;"><strong>CLIC EN TU PRODUCTO</strong></span>
+
+    <figure class="product-thumb">
+      <figcaption>GEL REUMATOL</figcaption>
+      <img src="Fotos/SaludyBelleza/REUMATOL.webp" alt="REUMATOL" onclick="showProduct('reumatol', 'REUMATOL')">
+    </figure>
+
+    <figure class="product-thumb">
+      <figcaption>CREMA DERMATOL</figcaption>
+      <img src="Fotos/SaludyBelleza/DERMATOL.webp" alt="DERMATOL" onclick="showProduct('dermatol', 'DERMATOL')">
+    </figure>
+
+    <figure class="product-thumb">
+      <figcaption>JABÓN<br>DE BARRO</figcaption>
+      <img src="Fotos/SaludyBelleza/JABON.webp" alt="JABÓN DE BARRO" onclick="showProduct('jabon', 'JABÓN DE BARRO')">
+    </figure>
+
+    <figure class="product-thumb">
+      <figcaption>EQUIPO<br>H-M</figcaption>
+      <img src="Fotos/SaludyBelleza/KITHM.webp" alt="EQUIPO H-M" onclick="showProduct('kit', 'EQUIPO H-M')">
+    </figure>
+  </div>
+
+
+
+  <div class="container" style="margin-top: -10px;">
     <div class="content">
       <!-- REUMATOL -->
       <div id="reumatol" class="product active">
@@ -522,14 +607,6 @@
 
       </div>
     </div>
-    <!-- SHOW PRODUCTOS -->
-    <div class="sidebar">
-      <span class="sidebar-title"><strong>ELIGE TU PRODUCTO</strong></span>
-      <img src="Fotos/SaludyBelleza/REUMATOL.webp" alt="REUMATOL" onclick="showProduct('reumatol')">
-      <img src="Fotos/SaludyBelleza/DERMATOL.webp" alt="DERMATOL" onclick="showProduct('dermatol')">
-      <img src="Fotos/SaludyBelleza/JABON.webp" alt="JABÓN DE BARRO" onclick="showProduct('jabon')">
-      <img src="Fotos/SaludyBelleza/KITHM.webp" alt="EQUIPO H-M" onclick="showProduct('kit')">
-    </div>
   </div>
 
   <!--                       TODOS LOS PRODUCTOS                        -->
@@ -537,9 +614,9 @@
   <section style="padding: 15px; background-color: #000; margin-top: -20px;">
     <h2 style="color: #ffcc00; text-align: center;">TODOS LOS PRODUCTOS</h2>
 
-    <div style="display: flex; flex-direction: column; gap: 40px; margin-top: -15px;">
+    <div style="display: flex; flex-direction: column; gap: 40px; margin-top: -15px; text-align: justify;">
 
-      <!-- REUMATOL -->
+      <!-- REUMATOL
       <div style="background-color:#111; border:1px solid #444; border-radius:8px; padding:15px;">
         <img src="Fotos/SaludyBelleza/REUMATOL.webp" alt="REUMATOL"
           style="width: 150px; float: right; margin-left: 20px; border-radius: 5px;">
@@ -589,31 +666,31 @@
           <strong style="color:#007BFF;">PEDIDOS:</strong><br>
         </p>
         <div style="text-align:center;">
-          <!-- Botón: Correo electrónico -->
+          
           <div style=" margin: 0px 0;">
             <a href="mailto:ventas@industriascontreras.com"
               style="display: inline-block; width: 100%; max-width: 310px; padding: 10px 3px; background-color: #ff8800; color: white; text-decoration: none; border-radius: 8px; font-size: 14px; font-weight: bold;">📨
               ventas@industriascontreras.com
             </a>
           </div>
-          <!-- Botón: Llamar al número personal -->
+         
           <div style="margin: 15px 0;">
             <a href="tel:5521485031"
               style="display: inline-block; width: 100%; max-width: 310px; padding: 10px 3px; background-color:#007bff; color: white; text-decoration: none; border-radius: 8px; font-size: 16px; font-weight: bold;">
               📳 Celular: 55-2148-5031
             </a>
           </div>
-          <!-- Botón: Llamar a oficina -->
+          
           <div style="margin: 15px 0;">
             <a href="tel:5563956800"
               style="display: inline-block; width: 100%; max-width: 310px; padding: 10px 3px; background-color:#8E44AD; color: white; text-decoration: none; border-radius: 8px; font-size: 16px; font-weight: bold;">
               ☎️ Oficina: 55-6395-6800
             </a>
           </div>
-          <!-- Botón: Enviar mensaje por WhatsApp -->
+          
           <a href="https://wa.me/525521485031" target="_blank" rel="noopener"
             style="display: inline-block; width: 100%; max-width: 310px; padding: 10px 3px; background-color: #005C4B; color: white; text-decoration: none; border-radius: 8px; font-size: 16px; font-weight: bold;">
-            <!-- Ícono SVG de WhatsApp -->
+            
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"
               style="height: 20px; margin-right: 10px; fill: white;">
               <path
@@ -638,7 +715,7 @@
           <strong style="color:#ffff00;">Nota:</strong> si adquirió el producto en promoción especial de camión, le
           respetaremos ese mismo precio.
         </p>
-      </div>
+      </div> -->
 
       <!-- DERMATOL -->
       <div style="background-color:#111; border:1px solid #444; border-radius:8px; padding:15px;">
