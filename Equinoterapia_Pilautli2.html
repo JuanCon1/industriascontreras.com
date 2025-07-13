@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equinoterapia Pilautli </title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="Fotos/Iconos/PILAUTLI.ico" />
+    <style>
+        :root {
+            --morado: #6a1b9a;
+            --morado-claro: #ba68c8;
+            --blanco: #ffffff;
+            --gris: #f5f5f5;
+            --negro: #333;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background-color: var(--gris);
+            color: var(--negro);
+        }
+
+        header {
+            background-color: var(--morado);
+            color: var(--blanco);
+            padding: 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav {
+            background-color: var(--morado-claro);
+            padding: 0.5rem;
+            text-align: center;
+        }
+
+        nav a {
+            color: var(--blanco);
+            margin: 0 1rem;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .hero {
+            background-image: url('Fotos/Logos/PILAUTLI.webp');
+            background-size: contain;
+            /* Mantiene una sola imagen visible y completa */
+            background-repeat: no-repeat;
+            /* Que no se repita */
+            background-position: center bottom;
+            /* Centrada y en la parte inferior */
+            background-color: var(--blanco);
+            height: 380px;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            color: var(--blanco);
+            text-shadow: 2px 2px 5px #000;
+            text-align: center;
+            padding: 1rem 1rem 1rem 1rem;
+            box-sizing: border-box;
+        }
+
+        .hero h2 {
+            margin: 0;
+            font-size: 1.5rem;
+            background-color: rgba(106, 27, 154, 0.6);
+            /* Fondo morado translúcido */
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+        }
+
+        @media (min-width: 768px) {
+            .hero h2 {
+                font-size: 2rem;
+            }
+        }
+
+        .seccion {
+            padding: 2rem;
+            background-color: var(--blanco);
+            margin: 1rem auto;
+            max-width: 900px;
+            border-radius: 1rem;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .principios li {
+            margin: 1rem 0;
+            font-size: 1.1rem;
+        }
+
+        .carrusel {
+            display: flex;
+            overflow-x: auto;
+            gap: 1rem;
+            scroll-snap-type: x mandatory;
+            padding: 1rem 0;
+        }
+
+        .carrusel img {
+            width: 100%;
+            height: auto;
+            max-width: 300px;
+            /* Puedes ajustar esto según tu diseño */
+            border-radius: 1rem;
+            scroll-snap-align: center;
+            flex: 0 0 auto;
+            object-fit: cover;
+        }
+
+        footer {
+            background-color: var(--morado);
+            color: var(--blanco);
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+
+        .btn {
+            background-color: var(--morado-claro);
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            color: var(--blanco);
+            font-size: 1rem;
+            cursor: pointer;
+            display: inline-block;
+            text-decoration: none;
+            margin-top: 1rem;
+        }
+
+        .btn:hover {
+            background-color: var(--morado);
+        }
+
+        @keyframes autoScroll {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        .carrusel-wrapper {
+            overflow: hidden;
+            width: 100%;
+        }
+
+        .carrusel {
+            display: flex;
+            gap: 1rem;
+            animation: autoScroll 13s linear infinite;
+            width: max-content;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Equinoterapia Pilautli</h1>
+    </header>
+
+    <nav>
+        <a href="#principios">Principios</a>
+        <a href="#galeria">Galería</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <div class="hero">
+        <div>
+            <h2>Amor, conexión y movimiento a través del caballo</h2>
+        </div>
+    </div>
+
+    <section class="seccion" id="principios">
+        <h2>Los 3 principios de la terapia con caballos</h2>
+        <ul class="principios">
+            <li><strong>1. Transmisión del patrón de marcha:</strong> Mejora la activación neuromuscular, coordinación y
+                movimiento natural.</li>
+            <li><strong>2. Transmisión del calor corporal:</strong> Relaja la musculatura, mejora la circulación y
+                genera bienestar.</li>
+            <li><strong>3. Impulsos rítmicos a nivel del cinturón pélvico:</strong> Estimula el tono muscular, mejora el
+                equilibrio y la integración sensoriomotriz.</li>
+        </ul>
+    </section>
+
+    <section class="seccion" id="galeria">
+        <h2>Galería Pilautli</h2>
+        <div class="carrusel-wrapper">
+            <div class="carrusel">
+                <img src="Fotos/Plautli/1.jpeg" alt="Sesión de equinoterapia 1">
+                <img src="Fotos/Plautli/2.jpeg" alt="Sesión de equinoterapia 2">
+                <img src="Fotos/Plautli/3.jpeg" alt="Niños en terapia con caballo">
+                <img src="Fotos/Plautli/4.jpeg" alt="Montando con ayuda profesional">
+                <img src="Fotos/Plautli/5.jpeg" alt="Sesión de equinoterapia 3">
+                <!-- Puedes duplicar si quieres efecto continuo -->
+                <img src="Fotos/Plautli/1.jpeg" alt="Sesión de equinoterapia 1">
+                <img src="Fotos/Plautli/2.jpeg" alt="Sesión de equinoterapia 2">
+                <img src="Fotos/Plautli/3.jpeg" alt="Niños en terapia con caballo">
+                <img src="Fotos/Plautli/4.jpeg" alt="Montando con ayuda profesional">
+                <img src="Fotos/Plautli/5.jpeg" alt="Sesión de equinoterapia 3">
+            </div>
+        </div>
+    </section>
+
+    <section class="seccion" id="contacto" style="text-align:center;">
+        <h2 style="text-align:center; margin-top:-10px;">¡Contáctanos!</h2>
+        <p><strong>¿Quieres conocer más sobre nuestras terapias?<br> Escríbenos o visítanos en nuestras instalaciones.
+                También puedes agendar tu primera sesión con nosotros.</strong>
+        </p>
+        <!-- Botón: Correo electrónico -->
+        <div style=" margin: 15px 0;">
+            <a href="mailto:contacto@industriascontreras.com"
+                style="display: inline-block; width: 100%; max-width: 310px; padding: 14px 0px; background-color: white; color: white; text-decoration: none; border-radius: 8px; font-size: 16px; font-weight: bold;">📨
+                <span style="color: red; font-weight: bold;">Sin correo electrónico</span>
+            </a>
+        </div>
+        <!-- Botón: Llamar al número personal -->
+        <div style="margin: 15px 0;">
+            <a href="tel:5564733010"
+                style="display: inline-block; width: 100%; max-width: 210px; padding: 14px 20px; background-color: #8E44AD; color: white; text-decoration: none; border-radius: 8px; font-size: 16px; font-weight: bold;">
+                📳 Celular: 55-6473-3010
+            </a>
+        </div>
+        <!-- Botón: Enviar mensaje por WhatsApp -->
+        <a href="https://wa.me/525564733010" target="_blank" rel="noopener"
+            style="display: inline-flex; align-items: center; justify-content: center; width: 100%; max-width: 210px; padding: 14px 20px; background-color: #005C4B; color: white; text-decoration: none; border-radius: 8px; font-size: 16px; font-weight: bold;">
+            <!-- Ícono SVG de WhatsApp -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"
+                style="height: 20px; margin-right: 10px; fill: white;">
+                <path
+                    d="M16 .4C7.4.4.4 7.4.4 16c0 2.9.8 5.7 2.4 8.1L.4 31.6l7.8-2c2.3 1.3 5 2 7.8 2 8.6 0 15.6-7 15.6-15.6S24.6.4 16 .4z" />
+                <path fill="#25D366"
+                    d="M24 21.6c-.4 1.1-2.2 2-3 2.1-.8.1-1.8.1-3-.3-3.1-1-5.4-3.5-6.3-4.6-.9-1.2-2.1-3.2-2.3-4.5-.2-1.3-.2-2.3 0-2.7.4-1 1.1-1.5 1.6-1.6.4-.1.8-.1 1.1 0 .3.1.7.6.8 1.1.3 1 .6 2 1.2 2.6.3.3.3.3.2.6-.1.3-.2.4-.3.5-.2.2-.3.3-.5.5-.2.2-.3.3-.1.6.2.3 1.2 2.1 3 3.1 1.8 1 2.2.9 2.6.8.3-.1 1.1-.5 1.3-.9.2-.4.6-.4.9-.2.3.1 1.6.8 1.9 1 .3.2.5.3.5.5s0 1.3-.4 2.2z" />
+            </svg>
+            Mensaje por WhatsApp
+        </a>
+        <p><strong>Dirección: <span style="color: red;"><br>Sin dirección del lugar definida</span></strong></p>
+        <p style="font-weight: bold; color: red; font-size: 36px;">
+            Su membresía ha expirado.<br>
+            Para terminar de programar su página web, adquiera una nueva membresía. <br><br> Si usted no adquiere una
+            nueva membresía, su página web será eliminada en 3 días.
+        </p>
+
+        <!-- <a href="mailto:equinoterapia@industriascontreras.com" class="btn">Solicitar información</a> -->
+    </section>
+
+    <footer>
+        <p>&copy; 2025 | Equinoterapia Pilautli <br>Todos los derechos reservados. </p>
+    </footer>
+</body>
+
+</html>
