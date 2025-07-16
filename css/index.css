@@ -238,8 +238,8 @@ body {
   background-color: #d35400;
 }
 
-/* SOFTWIC - Verde */
-.card.softwic {
+/* MASCOTAS - COLORES */
+.card.mascotas {
   background: linear-gradient(
     to right,
     /* Negro */ #000000 3%,
@@ -251,16 +251,16 @@ body {
   );
 }
 
-.card.softwic a {
+.card.mascotas a {
   background-color: #27ae60;
 }
 
-.card.softwic h3,
-.card.softwic p {
+.card.mascotas h3,
+.card.mascotas p {
   color: #000;
 }
 
-.card.softwic a:hover {
+.card.mascotas a:hover {
   background-color: #1e8449;
 }
 
