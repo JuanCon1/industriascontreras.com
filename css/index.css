@@ -318,7 +318,7 @@ body {
   background-color: #2e86c1;
 }
 
-/* transfer SELENE - Morado */
+/* TRANSFER SELENE - Morado */
 .card.transfer-selene {
   background: linear-gradient(to right, #ffd700, #1e90ff);
 }
@@ -368,7 +368,7 @@ body {
 
 /* BELLEZA Y SALUD - Azul y Rojo */
 .card.belleza {
-  background: linear-gradient(135deg, #3498db 50%, #e74c3c 50%);
+  background: linear-gradient(135deg, #3498db 50%, red 50%);
 }
 
 .card.belleza a {
